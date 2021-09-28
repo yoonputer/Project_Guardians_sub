@@ -35,6 +35,7 @@
     <link rel="stylesheet" href="{% static 'assets/css/nice-select.css' %}">
     <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
     <link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}">
+
 </head>
 <body>
     <!--? Preloader Start -->
@@ -155,13 +156,13 @@ function call2()
     text-align: right;
   }
 </style>
+<form name="search" action="/calc2_result" method="GET">
     <table border="1">
     <th>머신러닝 탄소 분석</th>
 	<tr><!-- 첫번째 줄 시작 -->
-
 	    <td style="word-break:break-all">지역
 
-	    <td>	<select type="text" class="form-control-sm" name="type" id="sido">
+	    <td>	<select type="text" class="form-control-sm" name="sido" id="sido">
                     <option value='' selected>&emsp;-- 선택 --&emsp;</option>
                     <option value='강원도'>강원도&emsp;&emsp;&emsp;</option>
                     <option value='경기도'>경기도&emsp;&emsp;&emsp;</option>
@@ -179,10 +180,10 @@ function call2()
                     <option value='제주특별자치도'>제주특별자치도</option>
                     <option value='충청남도'>충청남도&emsp;&emsp;</option>
                     <option value='충청북도'>충청북도&emsp;&emsp;</option>
-                    </select></td></td>
+                    </select></td></form>
 
 	    <td>&emsp;&emsp;&emsp;업종 </td>
-	    <td><select type="text" class="form-control-sm" name="type" id="ind">
+	    <td><select type="text" class="form-control-sm" name="ind" id="ind">
                     <option value='' selected>&emsp;&emsp;&emsp;&emsp;-- 선택 --&emsp;&emsp;&emsp;&emsp;</option>
                     <option value='primary'>농업,임업 및 어업&emsp;&emsp;&emsp;&emsp;&emsp;</option>
                     <option value='mining'>광업 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</option>
@@ -202,18 +203,21 @@ function call2()
 <!--        <td>전기 요금</td><td colspan="3"><input type='number' name='cell2' id='cell2' onkeyup='call()'>원/월</td>-->
 <!--	</tr>&lt;!&ndash; 세번째 줄 끝 &ndash;&gt;-->
         <tr><!-- 두번째 줄 시작 -->
-        <td>탄소 발생량</td><td colspan="3"><input type='text' name='co2' id='co2' readonly >&emsp;&emsp;&nbsp;&nbsp;Kg</td>
+        <td>탄소 발생량</td><td colspan="3"><input type='number' name='co2' id='co2' readonly >&emsp;&emsp;&nbsp;&nbsp;Kg</td>
 	</tr><!-- 두번째 줄 끝 -->
         <tr><!-- 두번째 줄 시작 -->
-        <td>필요 소나무</td><td colspan="3"><input type='text' name='tree' id='tree' readonly >&emsp;&emsp;그루</td>
+        <td>필요 소나무</td><td colspan="3"><input type='number' name='tree' id='tree' readonly >&emsp;&emsp;그루</td>
 	</tr><!-- 두번째 줄 끝 -->
         </tr><!-- 두번째 줄 끝 -->
         <tr><!-- 두번째 줄 시작 -->
         <td> </td><td colspan="3"><div class="button-group-area">
-					<input type="submit" value="확인" class="btn btn-block">
+					<input type="submit" value="확인" class="btn btn-block" onclick="location='/calc2_result'">
 				</div></td>
 	</tr><!-- 두번째 줄 끝 -->
     </table>
+</form>
+
+
 <!--<div class="section-top-border">-->
 <!--											<h3 class="mb-30">머신러닝 탄소 분석</h3>-->
 <!--											<div class="progress-table-wrap">-->
@@ -405,6 +409,6 @@ function call2()
     <!-- Jquery Plugins, main Jquery -->
     <script src="{% static 'assets/js/plugins.js' %}"></script>
     <script src="{% static 'assets/js/main.js' %}"></script>
-    
+
 </body>
 </html>
