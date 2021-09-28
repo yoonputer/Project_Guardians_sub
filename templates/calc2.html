@@ -1,0 +1,410 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+{% load static %}
+<style>
+  /*body {*/
+  /*  margin: 0;*/
+  /*}*/
+  /*.calculator {*/
+  /*  width: 100vw;*/
+  /*  height: 100vh;*/
+  /*  background: url("./static/assets/img/blog/bg2.png");*/
+  /*  background-size: 100% 100%;*/
+  /*  background-position: center;*/
+  /*}*/
+</style>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Environmental</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/slicknav.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/hamburgers.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/fontawesome-all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/themify-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/nice-select.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}">
+</head>
+<body>
+    <!--? Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="{% static 'assets/img/logo/loder.png' %}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader Start -->
+    <header>
+        <!-- Header Start -->
+        <div class="header-area">
+            <div class="main-header ">
+                <div class="header-bottom  header-sticky">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <!-- Logo -->
+                            <div class="col-xl-2 col-lg-2">
+                                <div class="logo">
+                                    <a href="index.html"><img src="{% static 'assets/img/logo/logo.png' %}" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="col-xl-10 col-lg-10">
+                                <div class="menu-wrapper  d-flex align-items-center justify-content-end">
+                                    <!-- Main-menu -->
+                                    <div class="main-menu d-none d-lg-block">
+                                        <nav>
+                                            <ul id="navigation">
+                                                <li><a href="index">Home</a></li>
+<!--                                                <li><a href="about.html">About</a></li>-->
+<!--                                                <li><a href="what-do.html">What we Do</a></li>-->
+<!--                                                <li><a href="projects.html">Projects</a></li>-->
+                                                <li><a href="blog.html">Blog</a>
+                                                    <ul class="submenu">
+                                                        <li><a href="blog">Blog</a></li>
+                                                        <li><a href="blog_details">Blog Details</a></li>
+                                                        <li><a href="elements">Element</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="contact.html">Contact</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <!-- Header-btn -->
+                                    <div class="header-right-btn d-none d-lg-block ml-20">
+                                        <a href="contact.html" class="btn header-btn">Make a Donation</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Mobile Menu -->
+                            <div class="col-12">
+                                <div class="mobile_menu d-block d-lg-none"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+    </header>
+    <main>
+        <!--? Hero Start -->
+<div class="slider-area2">
+			<div class="slider-height2 d-flex align-items-center">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-12">
+							<div class="hero-cap hero-cap2 pt-70">
+								<h2>Elements</h2>
+								<nav aria-label="breadcrumb">
+									<ol class="breadcrumb">
+										<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+										<li class="breadcrumb-item"><a href="#">Elements</a></li>
+									</ol>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+        <!-- Hero End -->
+        <!--? Blog Area Start111111111111111111111111111111111111111111111-->
+<script language='javascript'>
+function call()
+{
+ if(document.getElementById("elec").value && document.getElementById("cell2").value){
+  document.getElementById('co2').value =parseInt(document.getElementById('elec').value) + parseInt(document.getElementById('cell2').value);
+ }
+}
+function call2()
+{
+ if(document.getElementById("elec").value){
+  document.getElementById('tree').value = Math.round((((parseInt(document.getElementById('elec').value)  * 0.4663)/ 6.6) / 0.1) * 0.1);
+ }{
+  document.getElementById('co2').value = (Math.round((parseInt(document.getElementById('elec').value)  * 0.4663) / 0.1)) * 0.1;
+ }
+}
+</script>
+<div class="container box_1170">
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>테이블</title>
+</head>
+<body>
+<style>
+  table, th, td {
+    border: 1px solid #bcbcbc;
+  }
+
+  td {
+    text-align: right;
+  }
+</style>
+    <table border="1">
+    <th>머신러닝 탄소 분석</th>
+	<tr><!-- 첫번째 줄 시작 -->
+
+	    <td style="word-break:break-all">지역
+
+	    <td>	<select type="text" class="form-control-sm" name="type" id="sido">
+                    <option value='' selected>&emsp;-- 선택 --&emsp;</option>
+                    <option value='강원도'>강원도&emsp;&emsp;&emsp;</option>
+                    <option value='경기도'>경기도&emsp;&emsp;&emsp;</option>
+                    <option value='경상남도'>경상남도&emsp;&emsp;</option>
+                    <option value='경상북도'>경상북도&emsp;&emsp;</option>
+                    <option value='광주광역시'>광주광역시&emsp;</option>
+                    <option value='대구광역시'>대구광역시&emsp;</option>
+                    <option value='대전광역시'>대전광역시&emsp;</option>
+                    <option value='부산광역시'>부산광역시&emsp;</option>
+                    <option value='서울특별시'>서울특별시&emsp;</option>
+                    <option value='세종특별자치시'>세종특별자치시</option>
+                    <option value='울산광역시'>울산광역시&emsp;</option>
+                    <option value='전라남도'>전라남도&emsp;&emsp;</option>
+                    <option value='전라북도'>전라북도&emsp;&emsp;</option>
+                    <option value='제주특별자치도'>제주특별자치도</option>
+                    <option value='충청남도'>충청남도&emsp;&emsp;</option>
+                    <option value='충청북도'>충청북도&emsp;&emsp;</option>
+                    </select></td></td>
+
+	    <td>&emsp;&emsp;&emsp;업종 </td>
+	    <td><select type="text" class="form-control-sm" name="type" id="ind">
+                    <option value='' selected>&emsp;&emsp;&emsp;&emsp;-- 선택 --&emsp;&emsp;&emsp;&emsp;</option>
+                    <option value='primary'>농업,임업 및 어업&emsp;&emsp;&emsp;&emsp;&emsp;</option>
+                    <option value='mining'>광업 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</option>
+                    <option value='manufacture'>제조업&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</option>
+                    <option value='energy'>전기,가스,증기 및 수도사업</option>
+                    <option value='recycle'>폐기물 및 재생사업&emsp;&emsp;&emsp;&emsp;</option>
+                    <option value='building'>건설업&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</option>
+                    <option value='retail'>도매및 소매업&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</option>
+                    <option value='transportation'>운수업&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</option>
+                    </select></td>
+        </tr><!-- 첫번째 줄 끝 -->
+	<tr><!-- 두번째 줄 시작 -->
+        <td>전기 사용량</td><td colspan="3"><input type='number' name='elec' id='elec' onkeyup='call2()'> kWh/월
+        </td>
+	</tr><!-- 두번째 줄 끝 -->
+<!--        <tr>&lt;!&ndash; 세번째 줄 시작 &ndash;&gt;-->
+<!--        <td>전기 요금</td><td colspan="3"><input type='number' name='cell2' id='cell2' onkeyup='call()'>원/월</td>-->
+<!--	</tr>&lt;!&ndash; 세번째 줄 끝 &ndash;&gt;-->
+        <tr><!-- 두번째 줄 시작 -->
+        <td>탄소 발생량</td><td colspan="3"><input type='text' name='co2' id='co2' readonly >&emsp;&emsp;&nbsp;&nbsp;Kg</td>
+	</tr><!-- 두번째 줄 끝 -->
+        <tr><!-- 두번째 줄 시작 -->
+        <td>필요 소나무</td><td colspan="3"><input type='text' name='tree' id='tree' readonly >&emsp;&emsp;그루</td>
+	</tr><!-- 두번째 줄 끝 -->
+        </tr><!-- 두번째 줄 끝 -->
+        <tr><!-- 두번째 줄 시작 -->
+        <td> </td><td colspan="3"><div class="button-group-area">
+					<input type="submit" value="확인" class="btn btn-block">
+				</div></td>
+	</tr><!-- 두번째 줄 끝 -->
+    </table>
+<!--<div class="section-top-border">-->
+<!--											<h3 class="mb-30">머신러닝 탄소 분석</h3>-->
+<!--											<div class="progress-table-wrap">-->
+<!--												<div class="progress-table">-->
+<!--													<div class="table-head">-->
+<!--														<div class="serial"> &emsp;</div>-->
+<!--														<div class="country"> </div>-->
+<!--														<div class="visit"> </div>-->
+<!--														<div class="percentage"> </div>-->
+<!--													</div>-->
+<!--													<div class="table-row">-->
+<!--														<div class="serial">지역</div>-->
+<!--														<div class="country"> <select type="text" class="form-control-sm" name="type" id="type">-->
+<!--                    <option value='' selected>&emsp;&#45;&#45; 선택 &#45;&#45;&emsp;</option>-->
+<!--                    <option value='1'>강원도&emsp;&emsp;&emsp;</option>-->
+<!--                    <option value='2'>경기도&emsp;&emsp;&emsp;</option>-->
+<!--                    <option value='3'>경상남도&emsp;&emsp;</option>-->
+<!--                    <option value='4'>경상북도&emsp;&emsp;</option>-->
+<!--                    <option value='5'>광주광역시&emsp;</option>-->
+<!--                    <option value='6'>대구광역시&emsp;</option>-->
+<!--                    <option value='7'>대전광역시&emsp;</option>-->
+<!--                    <option value='8'>부산광역시&emsp;</option>-->
+<!--                    <option value='9'>서울특별시&emsp;</option>-->
+<!--                    <option value='10'>세종특별자치시</option>-->
+<!--                    <option value='11'>울산광역시&emsp;</option>-->
+<!--                    <option value='12'>전라남도&emsp;&emsp;</option>-->
+<!--                    <option value='13'>전라북도&emsp;&emsp;</option>-->
+<!--                    <option value='14'>제주특별자치도</option>-->
+<!--                    <option value='15'>충청남도&emsp;&emsp;</option>-->
+<!--                    <option value='16'>충청북도&emsp;&emsp;</option>-->
+<!--                    </select></div>-->
+<!--														<div class="visit">업종</div>-->
+<!--														<div class="percentage">-->
+<!--															<div class="visit">-->
+<!--																<select type="text" class="form-control-sm" name="type" id="type2">-->
+<!--                    <option value='' selected>&emsp;&emsp;&emsp;&emsp;&#45;&#45; 선택 &#45;&#45;&emsp;&emsp;&emsp;&emsp;</option>-->
+<!--                    <option value='primary'>농업,임업 및 어업&emsp;&emsp;&emsp;&emsp;&emsp;</option>-->
+<!--                    <option value='mining'>광업 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</option>-->
+<!--                    <option value='manufacture'>제조업&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</option>-->
+<!--                    <option value='energy'>전기,가스,증기 및 수도사업</option>-->
+<!--                    <option value='recycle'>폐기물 및 재생사업&emsp;&emsp;&emsp;&emsp;</option>-->
+<!--                    <option value='building'>건설업&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</option>-->
+<!--                    <option value='retail'>도매및 소매업&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</option>-->
+<!--                    <option value='transportation'>운수업&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</option>-->
+<!--                    </select>-->
+<!--															</div>-->
+<!--														</div>-->
+<!--													</div>-->
+<!--													<div class="table-row">-->
+<!--														<div class="serial">02</div>-->
+<!--														<div class="country"> <img src="assets/img/elements/f2.jpg" alt="flag">Canada</div>-->
+<!--														<div class="visit">645032</div>-->
+<!--														<div class="percentage">-->
+<!--															<div class="progress">-->
+<!--																<div class="progress-bar color-2" role="progressbar" style="width: 30%"-->
+<!--																aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>-->
+<!--															</div>-->
+<!--														</div>-->
+<!--													</div>-->
+<!--													<div class="table-row">-->
+<!--														<div class="serial">03</div>-->
+<!--														<div class="country"> <img src="assets/img/elements/f3.jpg" alt="flag">Canada</div>-->
+<!--														<div class="visit">645032</div>-->
+<!--														<div class="percentage">-->
+<!--															<div class="progress">-->
+<!--																<div class="progress-bar color-3" role="progressbar" style="width: 55%"-->
+<!--																aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>-->
+<!--															</div>-->
+<!--														</div>-->
+<!--													</div>-->
+<!--													<div class="table-row">-->
+<!--														<div class="serial">04</div>-->
+<!--														<div class="country"> <img src="assets/img/elements/f4.jpg" alt="flag">Canada</div>-->
+<!--														<div class="visit">645032</div>-->
+<!--														<div class="percentage">-->
+<!--															<div class="progress">-->
+<!--																<div class="progress-bar color-4" role="progressbar" style="width: 60%"-->
+<!--																aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>-->
+<!--															</div>-->
+<!--														</div>-->
+<!--													</div>-->
+<!--													<div class="table-row">-->
+<!--														<div class="serial">05</div>-->
+<!--														<div class="country"> <img src="assets/img/elements/f5.jpg" alt="flag">Canada</div>-->
+<!--														<div class="visit">645032</div>-->
+<!--														<div class="percentage">-->
+<!--															<div class="progress">-->
+<!--																<div class="progress-bar color-5" role="progressbar" style="width: 40%"-->
+<!--																aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>-->
+<!--															</div>-->
+<!--														</div>-->
+<!--													</div>-->
+<!--													<div class="table-row">-->
+<!--														<div class="serial">06</div>-->
+<!--														<div class="country"> <img src="assets/img/elements/f6.jpg" alt="flag">Canada</div>-->
+<!--														<div class="visit">645032</div>-->
+<!--														<div class="percentage">-->
+<!--															<div class="progress">-->
+<!--																<div class="progress-bar color-6" role="progressbar" style="width: 70%"-->
+<!--																aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>-->
+<!--															</div>-->
+<!--														</div>-->
+<!--													</div>-->
+<!--													<div class="table-row">-->
+<!--														<div class="serial">07</div>-->
+<!--														<div class="country"> <img src="assets/img/elements/f7.jpg" alt="flag">Canada</div>-->
+<!--														<div class="visit">645032</div>-->
+<!--														<div class="percentage">-->
+<!--															<div class="progress">-->
+<!--																<div class="progress-bar color-7" role="progressbar" style="width: 30%"-->
+<!--																aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>-->
+<!--															</div>-->
+<!--														</div>-->
+<!--													</div>-->
+<!--													<div class="table-row">-->
+<!--														<div class="serial">08</div>-->
+<!--														<div class="country"> <img src="assets/img/elements/f8.jpg" alt="flag">Canada</div>-->
+<!--														<div class="visit">645032</div>-->
+<!--														<div class="percentage">-->
+<!--															<div class="progress">-->
+<!--																<div class="progress-bar color-8" role="progressbar" style="width: 60%"-->
+<!--																aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>-->
+<!--															</div>-->
+<!--														</div>-->
+<!--													</div>-->
+<!--												</div>-->
+<!--											</div>-->
+<!--										</div>-->
+
+</body>
+</html></div>
+
+
+        <!-- Blog Area End -->
+    </main>
+    <footer>
+        <div class="footer-wrapper">
+           <!-- Footer Start-->
+
+           <!-- footer-bottom area -->
+
+              <!-- Footer End-->
+          </div>
+      </footer>
+      <!-- Scroll Up -->
+      <div id="back-top" >
+        <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+    </div>
+    <!-- JS here -->
+
+
+    <script src="{% static 'assets/js/vendor/modernizr-3.5.0.min.js' %}"></script>
+    <!-- Jquery, Popper, Bootstrap -->
+    <script src="{% static 'assets/js/vendor/jquery-1.12.4.min.js' %}"></script>
+    <script src="{% static 'assets/js/popper.min.js' %}"></script>
+    <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+    <!-- Jquery Mobile Menu -->
+    <script src="{% static 'assets/js/jquery.slicknav.min.js' %}"></script>
+
+    <!-- Jquery Slick , Owl-Carousel Plugins -->
+    <script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'assets/js/slick.min.js' %}"></script>
+    <!-- One Page, Animated-HeadLin -->
+    <script src="{% static 'assets/js/wow.min.js' %}"></script>
+    <script src="{% static 'assets/js/animated.headline.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.magnific-popup.js' %}"></script>
+
+    <!-- Date Picker -->
+    <script src="{% static 'assets/js/gijgo.min.js' %}"></script>
+    <!-- Nice-select, sticky -->
+    <script src="{% static 'assets/js/jquery.nice-select.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.sticky.js' %}"></script>
+    <!-- Progress -->
+    <script src="{% static 'assets/js/jquery.barfiller.js' %}"></script>
+
+    <!-- counter , waypoint,Hover Direction -->
+    <script src="{% static 'assets/js/jquery.counterup.min.js' %}"></script>
+    <script src="{% static 'assets/js/waypoints.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.countdown.min.js' %}"></script>
+    <script src="{% static 'assets/js/hover-direction-snake.min.js' %}"></script>
+
+    <!-- contact js -->
+    <script src="{% static 'assets/js/contact.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.form.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.validate.min.js' %}"></script>
+    <script src="{% static 'assets/js/mail-script.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.ajaxchimp.min.js' %}"></script>
+
+    <!-- Jquery Plugins, main Jquery -->
+    <script src="{% static 'assets/js/plugins.js' %}"></script>
+    <script src="{% static 'assets/js/main.js' %}"></script>
+    
+</body>
+</html>

@@ -1,0 +1,432 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+{% load static %}
+<style>
+  /*body {*/
+  /*  margin: 0;*/
+  /*}*/
+  /*.calculator {*/
+  /*  width: 100vw;*/
+  /*  height: 100vh;*/
+  /*  background: url("./static/assets/img/blog/bg2.png");*/
+  /*  background-size: 100% 100%;*/
+  /*  background-position: center;*/
+  /*}*/
+</style>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Environmental</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/slicknav.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/hamburgers.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/fontawesome-all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/themify-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/nice-select.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}">
+</head>
+<body>
+    <!--? Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="{% static 'assets/img/logo/loder.png' %}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader Start -->
+    <header>
+        <!-- Header Start -->
+        <div class="header-area">
+            <div class="main-header ">
+                <div class="header-bottom  header-sticky">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <!-- Logo -->
+                            <div class="col-xl-2 col-lg-2">
+                                <div class="logo">
+                                    <a href="index.html"><img src="{% static 'assets/img/logo/logo.png' %}" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="col-xl-10 col-lg-10">
+                                <div class="menu-wrapper  d-flex align-items-center justify-content-end">
+                                    <!-- Main-menu -->
+                                    <div class="main-menu d-none d-lg-block">
+                                        <nav>
+                                            <ul id="navigation">
+                                                <li><a href="index">Home</a></li>
+<!--                                                <li><a href="about.html">About</a></li>-->
+<!--                                                <li><a href="what-do.html">What we Do</a></li>-->
+<!--                                                <li><a href="projects.html">Projects</a></li>-->
+                                                <li><a href="blog.html">Blog</a>
+                                                    <ul class="submenu">
+                                                        <li><a href="blog">Blog</a></li>
+                                                        <li><a href="blog_details">Blog Details</a></li>
+                                                        <li><a href="elements">Element</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="contact.html">Contact</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <!-- Header-btn -->
+                                    <div class="header-right-btn d-none d-lg-block ml-20">
+                                        <a href="contact.html" class="btn header-btn">Make a Donation</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Mobile Menu -->
+                            <div class="col-12">
+                                <div class="mobile_menu d-block d-lg-none"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+    </header>
+    <main>
+        <!--? Hero Start -->
+<!--        <div class="slider-area2">-->
+<!--            <div class="slider-height2 d-flex align-items-center">-->
+<!--                <div class="container">-->
+<!--                    <div class="row">-->
+<!--                        <div class="col-xl-12">-->
+<!--                            <div class="hero-cap hero-cap2 pt-70">-->
+<!--                                <h2>Blog</h2>-->
+<!--                                <nav aria-label="breadcrumb">-->
+<!--                                    <ol class="breadcrumb">-->
+<!--                                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>-->
+<!--                                        <li class="breadcrumb-item"><a href="#">Blog</a></li>-->
+<!--                                    </ol>-->
+<!--                                </nav>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+        <!-- Hero End -->
+        <!--? Blog Area Start111111111111111111111111111111111111111111111-->
+
+
+<html lang="ko"><head>
+	<title>탄소발자국 계산기</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+
+	<link rel="stylesheet" href="{% static 'assets/css/tanso.css' %}">
+	<script src="{% static 'assets/js/jquery-1.10.2.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/loader.js' %}"></script>
+	<script src="{% static 'assets/js/tanso.js' %}" charset="utf-8"></script>
+	<script>
+
+		$(document).ready(function(){
+			google.charts.load("current", {packages:["corechart"]});
+			google.charts.setOnLoadCallback(drawChart);
+
+		})
+
+		function drawChart() {
+	        var data = google.visualization.arrayToDataTable([
+	          ['타입', 'CO2' , {type: 'string', role: 'style'}],
+	          ['전기', parseFloat(elecCo2) , 'stroke-width : 0;'],
+	          ['가스', parseFloat(gasCo2) , 'stroke-width : 0;'],
+	          ['수도', parseFloat(waterCo2) , 'stroke-width : 0;'],
+	          ['교통', parseFloat(oilCo2) , 'stroke-width : 0;']
+	        ]);
+
+	        var options = {
+	          'pieHole' : 0.4,
+	          'backgroundColor': 'transparent',
+	          'legend' : {
+	        	  position : 'bottom',
+	        	  textStyle:{ color: 'white',fontSize: 11},
+	        	  alignment:'center'
+	          },
+	          'chartArea': {
+	              left: 0,
+	              height: 170,
+	              width: 215,
+	              backgroundColor : {
+	            	  strokeWidth : 0
+	              }
+	            },
+	            'animation' :{
+                  duration: 1000,
+                  easing: 'out',
+                },
+                'colors' : ['#8045dd' , '#0b409c' ,  '#2f89fc' , '#ff4d4d' ]
+
+	        };
+
+	        var chart = new google.visualization.PieChart(document.getElementById('chart_1'));
+	        chart.draw(data, options);
+	    }
+
+		function bottomPopUp(value)
+		{
+			if(value == "01")
+				window.open("http://www.kcen.kr/none_renew.jsp??=common/policy","pop1","status=no, resizable=no,scrollbars=yes,top=200,left=200,width=770,height=400" );
+			else if(value == "02")
+				window.open("http://www.kcen.kr/none_renew.jsp??=common/copyright","pop2","status=no, resizable=no,scrollbars=yes,top=200,left=200,width=503,height=390" );
+			else if(value == "03")
+				window.open("http://www.kcen.kr/none_renew.jsp??=common/email","pop3","status=no, resizable=no,scrollbars=yes,top=200,left=200,width=503,height=350" );
+			else if(value == "04")
+				window.open("http://www.kcen.kr/none_renew.jsp??=common/policy02","pop4","status=no, resizable=no,scrollbars=yes,top=200,left=200,width=770,height=400" );
+
+		}
+
+	</script>
+<script type="text/javascript" charset="UTF-8" src="{% static 'assets/js/51loader.js' %}"></script><link id="load-css-0" rel="stylesheet" type="text/css" href="{% static 'assets/css/tooltip.css' %}"><link id="load-css-1" rel="stylesheet" type="text/css" href="{% static 'assets/css/util.css' %}"><script type="text/javascript" charset="UTF-8" src="{% static 'assets/js/jsapi_compiled_default_module.js' %}"></script><script type="text/javascript" charset="UTF-8" src="{% static 'assets/js/jsapi_compiled_graphics_module.js' %}"></script><script type="text/javascript" charset="UTF-8" src="{% static 'assets/js/jsapi_compiled_ui_module.js' %}"></script><script type="text/javascript" charset="UTF-8" src="{% static 'assets/js/jsapi_compiled_corechart_module.js' %}"></script></head>
+<body style="">
+
+	<div id="wrap">
+
+
+
+		<div id="content">
+			<form name="inputForm" method="post">
+				<div class="hiddenZone">
+				</div>
+				<div class="page1">
+					<div class="section">
+
+						<div class="pageDiv">
+							<div class="inputZone">
+<title>탄소발자국 계산기</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+
+	<link rel="stylesheet" href="{% static 'assets/css/tanso.css' %}">
+	<script src="{% static 'assets/js/jquery-1.10.2.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/loader.js' %}"></script>
+	<script src="{% static 'assets/js/tanso.js' %}" charset="utf-8"></script>
+	<script>
+
+		$(document).ready(function(){
+			google.charts.load("current", {packages:["corechart"]});
+			google.charts.setOnLoadCallback(drawChart);
+
+		})
+
+		function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['타입', 'CO2', {type: 'string', role: 'style'}],
+                ['전기', parseFloat(elecCo2), 'stroke-width : 0;'],
+                ['가스', parseFloat(gasCo2), 'stroke-width : 0;'],
+                ['수도', parseFloat(waterCo2), 'stroke-width : 0;'],
+                ['교통', parseFloat(oilCo2), 'stroke-width : 0;']
+            ]);
+
+            var options = {
+                'pieHole': 0.4,
+                'backgroundColor': 'transparent',
+                'legend': {
+                    position: 'bottom',
+                    textStyle: {color: 'white', fontSize: 11},
+                    alignment: 'center'
+                },
+                'chartArea': {
+                    left: 0,
+                    height: 170,
+                    width: 215,
+                    backgroundColor: {
+                        strokeWidth: 0
+                    }
+                },
+                'animation': {
+                    duration: 1000,
+                    easing: 'out',
+                },
+                'colors': ['#8045dd', '#0b409c', '#2f89fc', '#ff4d4d']
+
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('chart_1'));
+            chart.draw(data, options);
+        }
+</script>
+<script language='javascript'>
+function call()
+{
+ if(document.getElementById("sell1").value && document.getElementById("sell2").value){
+  document.getElementById('sell3').value =parseInt(document.getElementById('sell1').value) + parseInt(document.getElementById('sell2').value);
+ }
+}
+</script>
+
+<form name='sumform'>
+
+    <select type="text" class="form-control-sm" name="type" id="type">
+                    <option value='' selected>-- 선택 --</option>
+                    <option value='도시락'>도시락</option>
+                    <option value='돈까스/일식'>돈까스/일식</option>
+                    <option value='분식'>분식</option>
+                    <option value='아시안/양식'>아시안/양식</option>
+                    <option value='야식'>야식</option>
+                    <option value='족발/보쌈'>족발/보쌈</option>
+                    <option value='중식'>중식</option>
+                    <option value='찜탕'>찜탕</option>
+                    <option value='치킨'>치킨</option>
+                    <option value='카페/디저트'>카페/디저트</option>
+                    <option value='패스트푸드'>패스트푸드</option>
+                    <option value='피자'>피자</option>
+                    <option value='한식'>한식</option>
+                    <option value='회'>회</option>
+                    </select>
+                    <select type="text" class="form-control-sm" name="type" id="type2">
+                    <option value='' selected>-- 선택 --</option>
+                    <option value='도시락'>도시락</option>
+                    <option value='돈까스/일식'>돈까스/일식</option>
+                    <option value='분식'>분식</option>
+                    <option value='아시안/양식'>아시안/양식</option>
+                    <option value='야식'>야식</option>
+                    <option value='족발/보쌈'>족발/보쌈</option>
+                    <option value='중식'>중식</option>
+                    <option value='찜탕'>찜탕</option>
+                    <option value='치킨'>치킨</option>
+                    <option value='카페/디저트'>카페/디저트</option>
+                    <option value='패스트푸드'>패스트푸드</option>
+                    <option value='피자'>피자</option>
+                    <option value='한식'>한식</option>
+                    <option value='회'>회</option>
+                    </select>
+
+
+
+<input type='text' name='sell1' id='sell1' onkeyup='call()'>
+<input type='text' name='sell2' id='sell2' onkeyup='call()'>
+<input type='text' name='sell3' id='sell3' readonly >
+    <button id="getdata">GET DATA</button>
+
+
+
+								<div class="input_elec">
+									<div class="inputName" style="top:230px; left:105px;">
+										전기사용량
+										<input type="text" name="usedElec" title="전기사용량" maxlength="7" value="" id="" style="margin-left:10px; width:310px;" placeholder="숫자로 입력">
+										<span> kWh/월</span>
+									</div>
+
+									<div class="inputName" style="top:295px; left:105px;">
+										전기요금
+										 <input type="text" name="moneyElec" title="전기요금" maxlength="7" style="margin-left:25px; width:310px;" placeholder="숫자로 입력">
+										 <span> 원/월</span>
+									</div>
+								</div>
+<div class="inputResultZone">
+								<div class="co2">
+									<div class="inputNumber num1" style="visibility:hidden;">0</div>
+									<div class="inputNumber num2" style="visibility:hidden;">0</div>
+									<div class="inputNumber num3" style="visibility:hidden;">0</div>
+									<div class="inputNumber num4" style="visibility:hidden;">0</div>
+									<div class="inputNumber num5" style="visibility:hidden;">0</div>
+									<div class="inputNumber num6" style="visibility:hidden;">0</div>
+									<div class="inputNumber num7">0</div>
+									<div class="dot">.</div>
+									<div class="inputNumber num8">0</div>
+								</div>
+
+								<div class="tree">
+									<div class="inputNumber num1" style="visibility:hidden;">0</div>
+									<div class="inputNumber num2" style="visibility:hidden;">0</div>
+									<div class="inputNumber num3" style="visibility:hidden;">0</div>
+									<div class="inputNumber num4" style="visibility:hidden;">0</div>
+									<div class="inputNumber num5" style="visibility:hidden;">0</div>
+									<div class="inputNumber num6" style="visibility:hidden;">0</div>
+									<div class="inputNumber num7">0</div>
+									<div class="dot">.</div>
+									<div class="inputNumber num8">0</div>
+								</div>
+
+							</div>
+
+
+							<input type="button" value="< 이전" class="prevBtn btnBase" style="display:none;">
+							<input type="button" value="다음 >" class="nextBtn btnBase">
+
+
+</form>
+
+
+
+</body>
+</html>
+
+        <!-- Blog Area End -->
+    </main>
+    <footer>
+        <div class="footer-wrapper">
+           <!-- Footer Start-->
+
+           <!-- footer-bottom area -->
+
+              <!-- Footer End-->
+          </div>
+      </footer>
+      <!-- Scroll Up -->
+      <div id="back-top" >
+        <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+    </div>
+    <!-- JS here -->
+
+
+    <script src="{% static 'assets/js/vendor/modernizr-3.5.0.min.js' %}"></script>
+    <!-- Jquery, Popper, Bootstrap -->
+    <script src="{% static 'assets/js/vendor/jquery-1.12.4.min.js' %}"></script>
+    <script src="{% static 'assets/js/popper.min.js' %}"></script>
+    <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+    <!-- Jquery Mobile Menu -->
+    <script src="{% static 'assets/js/jquery.slicknav.min.js' %}"></script>
+
+    <!-- Jquery Slick , Owl-Carousel Plugins -->
+    <script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'assets/js/slick.min.js' %}"></script>
+    <!-- One Page, Animated-HeadLin -->
+    <script src="{% static 'assets/js/wow.min.js' %}"></script>
+    <script src="{% static 'assets/js/animated.headline.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.magnific-popup.js' %}"></script>
+
+    <!-- Date Picker -->
+    <script src="{% static 'assets/js/gijgo.min.js' %}"></script>
+    <!-- Nice-select, sticky -->
+    <script src="{% static 'assets/js/jquery.nice-select.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.sticky.js' %}"></script>
+    <!-- Progress -->
+    <script src="{% static 'assets/js/jquery.barfiller.js' %}"></script>
+
+    <!-- counter , waypoint,Hover Direction -->
+    <script src="{% static 'assets/js/jquery.counterup.min.js' %}"></script>
+    <script src="{% static 'assets/js/waypoints.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.countdown.min.js' %}"></script>
+    <script src="{% static 'assets/js/hover-direction-snake.min.js' %}"></script>
+
+    <!-- contact js -->
+    <script src="{% static 'assets/js/contact.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.form.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.validate.min.js' %}"></script>
+    <script src="{% static 'assets/js/mail-script.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.ajaxchimp.min.js' %}"></script>
+
+    <!-- Jquery Plugins, main Jquery -->
+    <script src="{% static 'assets/js/plugins.js' %}"></script>
+    <script src="{% static 'assets/js/main.js' %}"></script>
+    
+</body>
+</html>

@@ -1,0 +1,1279 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+{% load static %}
+<style>
+  /*body {*/
+  /*  margin: 0;*/
+  /*}*/
+  /*.calculator {*/
+  /*  width: 100vw;*/
+  /*  height: 100vh;*/
+  /*  background: url("./static/assets/img/blog/bg2.png");*/
+  /*  background-size: 100% 100%;*/
+  /*  background-position: center;*/
+  /*}*/
+</style>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Environmental</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/slicknav.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/hamburgers.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/fontawesome-all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/themify-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/nice-select.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}">
+</head>
+<body>
+    <!--? Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="{% static 'assets/img/logo/loder.png' %}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader Start -->
+    <header>
+        <!-- Header Start -->
+        <div class="header-area">
+            <div class="main-header ">
+                <div class="header-bottom  header-sticky">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <!-- Logo -->
+                            <div class="col-xl-2 col-lg-2">
+                                <div class="logo">
+                                    <a href="index.html"><img src="{% static 'assets/img/logo/logo.png' %}" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="col-xl-10 col-lg-10">
+                                <div class="menu-wrapper  d-flex align-items-center justify-content-end">
+                                    <!-- Main-menu -->
+                                    <div class="main-menu d-none d-lg-block">
+                                        <nav>
+                                            <ul id="navigation">
+                                                <li><a href="index">Home</a></li>
+<!--                                                <li><a href="about.html">About</a></li>-->
+<!--                                                <li><a href="what-do.html">What we Do</a></li>-->
+<!--                                                <li><a href="projects.html">Projects</a></li>-->
+                                                <li><a href="blog.html">Blog</a>
+                                                    <ul class="submenu">
+                                                        <li><a href="blog">Blog</a></li>
+                                                        <li><a href="blog_details">Blog Details</a></li>
+                                                        <li><a href="elements">Element</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="contact.html">Contact</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <!-- Header-btn -->
+                                    <div class="header-right-btn d-none d-lg-block ml-20">
+                                        <a href="contact.html" class="btn header-btn">Make a Donation</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Mobile Menu -->
+                            <div class="col-12">
+                                <div class="mobile_menu d-block d-lg-none"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+    </header>
+    <main>
+        <!--? Hero Start -->
+<!--        <div class="slider-area2">-->
+<!--            <div class="slider-height2 d-flex align-items-center">-->
+<!--                <div class="container">-->
+<!--                    <div class="row">-->
+<!--                        <div class="col-xl-12">-->
+<!--                            <div class="hero-cap hero-cap2 pt-70">-->
+<!--                                <h2>Blog</h2>-->
+<!--                                <nav aria-label="breadcrumb">-->
+<!--                                    <ol class="breadcrumb">-->
+<!--                                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>-->
+<!--                                        <li class="breadcrumb-item"><a href="#">Blog</a></li>-->
+<!--                                    </ol>-->
+<!--                                </nav>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+        <!-- Hero End -->
+        <!--? Blog Area Start111111111111111111111111111111111111111111111-->
+
+
+
+
+			<html lang="ko"><head>
+	<title>탄소발자국 계산기</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+
+	<link rel="stylesheet" href="{% static 'assets/css/tanso.css' %}">
+	<script src="{% static 'assets/js/jquery-1.10.2.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/loader.js' %}"></script>
+	<script src="{% static 'assets/js/tanso.js' %}" charset="utf-8"></script>
+	<script>
+
+		$(document).ready(function(){
+			google.charts.load("current", {packages:["corechart"]});
+			google.charts.setOnLoadCallback(drawChart);
+
+		})
+
+		function drawChart() {
+	        var data = google.visualization.arrayToDataTable([
+	          ['타입', 'CO2' , {type: 'string', role: 'style'}],
+	          ['전기', parseFloat(elecCo2) , 'stroke-width : 0;'],
+	          ['가스', parseFloat(gasCo2) , 'stroke-width : 0;'],
+	          ['수도', parseFloat(waterCo2) , 'stroke-width : 0;'],
+	          ['교통', parseFloat(oilCo2) , 'stroke-width : 0;']
+	        ]);
+
+	        var options = {
+	          'pieHole' : 0.4,
+	          'backgroundColor': 'transparent',
+	          'legend' : {
+	        	  position : 'bottom',
+	        	  textStyle:{ color: 'white',fontSize: 11},
+	        	  alignment:'center'
+	          },
+	          'chartArea': {
+	              left: 0,
+	              height: 170,
+	              width: 215,
+	              backgroundColor : {
+	            	  strokeWidth : 0
+	              }
+	            },
+	            'animation' :{
+                  duration: 1000,
+                  easing: 'out',
+                },
+                'colors' : ['#8045dd' , '#0b409c' ,  '#2f89fc' , '#ff4d4d' ]
+
+	        };
+
+	        var chart = new google.visualization.PieChart(document.getElementById('chart_1'));
+	        chart.draw(data, options);
+	    }
+
+		function bottomPopUp(value)
+		{
+			if(value == "01")
+				window.open("http://www.kcen.kr/none_renew.jsp??=common/policy","pop1","status=no, resizable=no,scrollbars=yes,top=200,left=200,width=770,height=400" );
+			else if(value == "02")
+				window.open("http://www.kcen.kr/none_renew.jsp??=common/copyright","pop2","status=no, resizable=no,scrollbars=yes,top=200,left=200,width=503,height=390" );
+			else if(value == "03")
+				window.open("http://www.kcen.kr/none_renew.jsp??=common/email","pop3","status=no, resizable=no,scrollbars=yes,top=200,left=200,width=503,height=350" );
+			else if(value == "04")
+				window.open("http://www.kcen.kr/none_renew.jsp??=common/policy02","pop4","status=no, resizable=no,scrollbars=yes,top=200,left=200,width=770,height=400" );
+
+		}
+
+	</script>
+<script type="text/javascript" charset="UTF-8" src="{% static 'assets/js/51loader.js' %}"></script><link id="load-css-0" rel="stylesheet" type="text/css" href="{% static 'assets/css/tooltip.css' %}"><link id="load-css-1" rel="stylesheet" type="text/css" href="{% static 'assets/css/util.css' %}"><script type="text/javascript" charset="UTF-8" src="{% static 'assets/js/jsapi_compiled_default_module.js' %}"></script><script type="text/javascript" charset="UTF-8" src="{% static 'assets/js/jsapi_compiled_graphics_module.js' %}"></script><script type="text/javascript" charset="UTF-8" src="{% static 'assets/js/jsapi_compiled_ui_module.js' %}"></script><script type="text/javascript" charset="UTF-8" src="{% static 'assets/js/jsapi_compiled_corechart_module.js' %}"></script></head>
+<body style="">
+
+	<div id="wrap">
+
+		<div id="header">
+			<div class="section">
+				<h3 id="logo"><img src="{% static 'assets/img/co2/logo.jpg' %}" alt="한국기후환경네트워크"></h3>
+
+				<div id="topHeader">
+					<ul>
+						<li class="on">탄소발자국 계산기</li>
+						<li>결과보기</li>
+						<li>생활 속 실천방안</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div id="content">
+			<form name="inputForm" method="post">
+				<div class="hiddenZone">
+				</div>
+				<div class="page1">
+					<div class="section">
+
+						<div class="pageDiv">
+							<div class="inputZone">
+								<h3>탄소발자국 계산기</h3>
+
+								<div class="subTitle">
+									<div class="subTitleName">전기</div>
+									<div class="subTitleDetail">ㆍ월간 사용량(권장)과 요금 중 한가지만 입력</div>
+									<div class="subTitleDetail2">ㆍ요금 입력 시 실제 사용량과 차이가 발생할 수 있습니다.</div>
+								</div>
+
+								<div class="input_elec">
+									<div class="inputName" style="top:230px; left:105px;">
+										전기사용량
+										<input type="text" name="usedElec" title="전기사용량" maxlength="7" value="" id="" style="margin-left:10px; width:310px;" placeholder="숫자로 입력">
+										<span> kWh/월</span>
+									</div>
+
+									<div class="inputName" style="top:295px; left:105px;">
+										전기요금
+										 <input type="text" name="moneyElec" title="전기요금" maxlength="7" style="margin-left:25px; width:310px;" placeholder="숫자로 입력">
+										 <span> 원/월</span>
+									</div>
+								</div>
+
+								<div class="input_gas" style="display:none;">
+									<div class="inputName" style="top:230px; left:105px;">
+										가스사용량
+										<input type="text" name="usedGas" title="가스사용량" maxlength="7" value="" id="" style="margin-left:10px; width:310px;" placeholder="숫자로 입력">
+										<span> m³/월</span>
+									</div>
+
+									<div class="inputName" style="top:295px; left:105px;">
+										가스요금
+										 <input type="text" name="moneyGas" title="가스요금" maxlength="7" style="margin-left:25px; width:310px;" placeholder="숫자로 입력">
+										 <span> 원/월</span>
+									</div>
+								</div>
+
+								<div class="input_water" style="display:none;">
+									<div class="inputName" style="top:230px; left:105px;">
+										수도사용량
+										<input type="text" name="usedWater" title="가스사용량" maxlength="7" value="" id="" style="margin-left:10px; width:310px;" placeholder="숫자로 입력">
+										<span> m³/월</span>
+									</div>
+
+									<div class="inputName" style="top:295px; left:105px;">
+										수도요금
+										 <input type="text" name="moneyWater" title="가스요금" maxlength="7" style="margin-left:25px; width:310px;" placeholder="숫자로 입력">
+										 <span> 원/월</span>
+									</div>
+								</div>
+
+
+								<div class="input_car" style="display:none;">
+									<div class="inputName" style="top:222px; left:105px; line-height:23px;">
+										승용차 연료
+										<div style="display:inline-block; margin-left:30px;">
+											<input type="radio" name="oilCar" id="oilCar_1" value="0" checked="checked"><label for="oilCar_1">휘발유</label>
+											<input type="radio" name="oilCar" id="oilCar_2" value="1"><label for="oilCar_2">경유</label>
+											<input type="radio" name="oilCar" id="oilCar_3" value="2"><label for="oilCar_3">LPG</label>
+											<input type="radio" name="oilCar" id="oilCar_4" value="3"><label for="oilCar_4">승용차 없음</label>
+										</div>
+									</div>
+									<div class="inputName" style="top:265px; left:105px;">
+										이동 거리
+										<input type="text" name="usedCar" title="이동거리" maxlength="7" value="" id="" style="margin-left:17px;" placeholder="숫자로 입력">
+										<span> km/월</span>
+									</div>
+									<div class="inputName" style="top:310px; left:105px;">
+										연료비
+										<input type="text" name="moneyCar" title="연료비" maxlength="7" value="" id="" style="margin-left:37px;" placeholder="숫자로 입력">
+										<span> 원/월</span>
+									</div>
+								</div>
+
+							</div>
+
+
+							<div class="inputResultZone">
+								<div class="co2">
+									<div class="inputNumber num1" style="visibility:hidden;">0</div>
+									<div class="inputNumber num2" style="visibility:hidden;">0</div>
+									<div class="inputNumber num3" style="visibility:hidden;">0</div>
+									<div class="inputNumber num4" style="visibility:hidden;">0</div>
+									<div class="inputNumber num5" style="visibility:hidden;">0</div>
+									<div class="inputNumber num6" style="visibility:hidden;">0</div>
+									<div class="inputNumber num7">0</div>
+									<div class="dot">.</div>
+									<div class="inputNumber num8">0</div>
+								</div>
+
+								<div class="tree">
+									<div class="inputNumber num1" style="visibility:hidden;">0</div>
+									<div class="inputNumber num2" style="visibility:hidden;">0</div>
+									<div class="inputNumber num3" style="visibility:hidden;">0</div>
+									<div class="inputNumber num4" style="visibility:hidden;">0</div>
+									<div class="inputNumber num5" style="visibility:hidden;">0</div>
+									<div class="inputNumber num6" style="visibility:hidden;">0</div>
+									<div class="inputNumber num7">0</div>
+									<div class="dot">.</div>
+									<div class="inputNumber num8">0</div>
+								</div>
+
+							</div>
+
+							<div class="inputTotalZone">
+								<div class="co2">
+									<div class="inputNumber num1" style="visibility:hidden;">0</div>
+									<div class="inputNumber num2" style="visibility:hidden;">0</div>
+									<div class="inputNumber num3" style="visibility:hidden;">0</div>
+									<div class="inputNumber num4" style="visibility:hidden;">0</div>
+									<div class="inputNumber num5" style="visibility:hidden;">0</div>
+									<div class="inputNumber num6" style="visibility:hidden;">0</div>
+									<div class="inputNumber num7">0</div>
+
+									<div class="dot">.</div>
+									<div class="inputNumber num8">0</div>
+								</div>
+								<div class="tree">
+									<div class="inputNumber num1" style="visibility:hidden;">0</div>
+									<div class="inputNumber num2" style="visibility:hidden;">0</div>
+									<div class="inputNumber num3" style="visibility:hidden;">0</div>
+									<div class="inputNumber num4" style="visibility:hidden;">0</div>
+									<div class="inputNumber num5" style="visibility:hidden;">0</div>
+									<div class="inputNumber num6" style="visibility:hidden;">0</div>
+									<div class="inputNumber num7">0</div>
+									<div class="dot">.</div>
+									<div class="inputNumber num8">0</div>
+								</div>
+							</div>
+
+							<input type="button" value="< 이전" class="prevBtn btnBase" style="display:none;">
+							<input type="button" value="다음 >" class="nextBtn btnBase">
+						</div>
+
+
+						<div class="pageMenu">
+							<ul>
+								<li class="pageMenu_level1"><img src="{% static 'assets/img/co2/main_menu01_on.png' %}" alt="전기"></li>
+								<li class="pageMenu_level2"><img src="{% static 'assets/img/co2/main_menu02.png' %}" alt="가스"></li>
+								<li class="pageMenu_level3"><img src="{% static 'assets/img/co2/main_menu03.png' %}" alt="수도"></li>
+								<li class="pageMenu_level4"><img src="{% static 'assets/img/co2/main_menu04.png' %}" alt="교통"></li>
+								<li><img src="{% static 'assets/img/co2/page1_hint.png' %}" style="margin-top:25px;" alt="가정,교통에서 발생되는 이산화탄소의 양을 계산해보고 이산화탄소 발생을 줄이는 실천방법도 확인하세요!"></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="page2" style="display:none;">
+					<div class="section">
+
+						<div class="pageDiv">
+							<div class="tapMenu">
+								<ul>
+									<li class="on">나의정보</li>
+									<li>사용량분석</li>
+									<li>실천목표</li>
+									<li>종합평가</li>
+								</ul>
+							</div>
+							<div class="step1">
+								<div class="top">
+									<table border="0" style="width:100%; margin-top:15px;">
+										<colgroup>
+											<col width="105">
+											<col width="*">
+										</colgroup>
+										<tbody><tr>
+											<td>이름(별명)</td>
+											<td>: <input type="text" name="memberName" id="" class="redInput" style="margin-top:-8px; margin-left:7px;" placeholder="최대 5글자까지 입력가능합니다." maxlength="5"></td>
+										</tr>
+										<tr>
+											<td>주거형태</td>
+											<td>:
+												<div>
+													<input type="radio" name="memberHometype" value="A" id="hometype_a" checked="checked"><label for="hometype_a">아파트</label>
+													<input type="radio" name="memberHometype" value="S" id="hometype_b"><label for="hometype_b">단독주택</label>
+													<input type="radio" name="memberHometype" value="Y" id="hometype_c" class="w180"><label for="hometype_c">연립/다세대/다가구</label>
+													<input type="radio" name="memberHometype" value="E" id="hometype_d"><label for="hometype_d">기타</label>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td rowspan="2">거주면적</td>
+											<td>:
+												<div>
+													<input type="radio" name="memberHomesize" value="0" id="homesize_a" class="w180" checked="checked"><label for="homesize_a">~33m²(10평 이하)</label>
+													<input type="radio" name="memberHomesize" value="1" id="homesize_b" class="w180"><label for="homesize_b">33.1 ~ 66m²(10.1~20평)</label>
+													<input type="radio" name="memberHomesize" value="2" id="homesize_c" class="w180"><label for="homesize_c">66.1 ~ 99m²(20.1~30평)</label>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div>
+													<input type="radio" name="memberHomesize" value="3" id="homesize_d" class="w180"><label for="homesize_d">99.1 ~ 132m²(30.1~40평)</label>
+													<input type="radio" name="memberHomesize" value="4" id="homesize_e" class="w180"><label for="homesize_e">132.1m²(40평 초과)</label>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>거주인원</td>
+											<td>:
+												<div>
+													<input type="radio" name="memberHomefamily" value="1" id="homeFamity_a" checked="checked"><label for="homeFamity_a">1명</label>
+													<input type="radio" name="memberHomefamily" value="2" id="homeFamity_b"><label for="homeFamity_b">2명</label>
+													<input type="radio" name="memberHomefamily" value="3" id="homeFamity_c"><label for="homeFamity_c">3명</label>
+													<input type="radio" name="memberHomefamily" value="4" id="homeFamity_d"><label for="homeFamity_d">4명</label>
+													<input type="radio" name="memberHomefamily" value="5" id="homeFamity_e"><label for="homeFamity_e">5명</label>
+													<input type="radio" name="memberHomefamily" value="6" id="homeFamity_f"><label for="homeFamity_f">6명 이상</label>
+												</div>
+											</td>
+										</tr>
+									</tbody></table>
+								</div>
+								<div class="bottom">
+									<div class="msg">
+										<p>개인정보 수집·이용 동의</p>
+										<div>한국기후·환경네트워크는 탄소발자국 계산기 결과값 계산 및 사용현황 분석을 위해 다음과 같이 개인정보를 수집·이용합니다. </div>
+										<ul>
+											<li>수집하는 개인정보 항목 : 이름, 주거형태, 주거면적, 거주인원</li>
+											<li>개인정보의 수집 및 이용목적  : 탄소발자국 계산기 결과값 계산 및 사용현황 분석 </li>
+											<li>개인정보의 보유 및 이용기간  : 5년</li>
+										</ul>
+										<div>※ 사용자는 개인정보 수집 및 이용을 거부할 권리가 있습니다. 단, 탄소발자국 계산기 계산결과 제공이 불가합니다.</div>
+										<div style="color:red;">※ 본 개인정보 수집·이용 목적은 사용자 식별이 아니므로 이름 대신 별명이나 식별 불가한 정보를 입력하셔도 무관합니다.</div>
+									</div>
+									<div style="margin-top:5px;">
+										<input type="checkbox" name="agree" id="agree"><label for="agree">개인정보 수집 및 이용에 동의함</label>
+									</div>
+									<input type="button" value="저장" class="btnBase saveBtn">
+								</div>
+							</div>
+							<div class="step2" style="display:none;">
+								<img src="{% static 'assets/img/co2/btn_next.png' %}" alt="다음" class="nextBtn">
+
+								<div class="top">
+									<div id="chart_1"><div style="position: relative;"><div dir="ltr" style="position: relative; width: 400px; height: 200px;"><div aria-label="A chart." style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;"><svg width="400" height="200" aria-label="A chart." style="overflow: hidden;"><defs id="_ABSTRACT_RENDERER_ID_0"></defs><g></g></svg><div aria-label="A tabular representation of the data in the chart." style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;"><table><thead><tr><th>타입</th><th>CO2</th></tr></thead><tbody><tr><td>전기</td><td>0</td></tr><tr><td>가스</td><td>0</td></tr><tr><td>수도</td><td>0</td></tr><tr><td>교통</td><td>0</td></tr></tbody></table></div></div></div><div aria-hidden="true" style="display: none; position: absolute; top: 210px; left: 410px; white-space: nowrap; font-family: Arial; font-size: 8px;">-._.-*^*-._.-*^*-._.-</div><div></div></div></div>
+									<div class="rightText">
+										<p class="first"><span class="tansoName">홍길동</span> 님의 이산화탄소(CO₂)발생량 통계입니다.</p>
+										<p class="second">
+											<span class="tansoName2">홍길동</span> 님 가정은 이산화탄소 배출량은 총 <span class="tansoTotal">1,017kg</span> 이며,<br>
+											비슷한 다른 가정 평균<span class="tansoOther" style="color:#fff;">315.9kg</span> 보다 약 <span class="tansoPercent">222% 더 많이 배출</span>하고 있습니다.<br>
+											<span class="tansoTotal_second" style="color:#fff;">1,017kg</span>의 이산화탄소 를 상쇄시키기 위해서는 <span class="tansoTree">367 그루</span>의 소나무를 심어야 합니다.<br>
+											왼쪽의 그래프를 보고 어느 부분에서 이산화탄소를 많이 발생하고 있는지 비교해 보세요.
+										</p>
+									</div>
+								</div>
+								<div class="bottom">
+									<div class="firstChart">
+
+										<div class="title_one">CO₂ 발생량</div>
+										<div class="title_two">내가 심어야할 소나무</div>
+
+										<div class="chartZone">
+											<div class="chartOne">&nbsp;</div>
+											<div class="chartTwo">&nbsp;</div>
+											<div class="chartThree">&nbsp;</div>
+											<div class="chartFour"></div>
+											<div class="name one">50Kg</div>
+											<div class="name two">31kg</div>
+											<div class="name three">50그루</div>
+											<div class="name four">5그루</div>
+											<img src="{% static 'assets/img/co2/page2_chartOne_icon.jpg' %}" alt="" class="chartOne_icon">
+											<img src="{% static 'assets/img/co2/page2_chartTwo_icon.jpg' %}" alt="" class="chartTwo_icon">
+										</div>
+
+										<div class="subTitle_one">다른집</div>
+										<div class="subTitle_two">우리집</div>
+										<div class="subTitle_three">다른집</div>
+										<div class="subTitle_four">우리집</div>
+
+									</div>
+
+									<div class="otherChart" id="elecChart">
+										<div class="title_one" style="color:#8045dd;">전기</div>
+										<div class="chartZone">
+											<div class="chartOne">&nbsp;</div>
+											<div class="chartTwo">&nbsp;</div>
+											<div class="name one">50Kg</div>
+											<div class="name two">31kg</div>
+										</div>
+										<div class="subTitle_one">다른집</div>
+										<div class="subTitle_two">우리집</div>
+									</div>
+
+									<div class="otherChart" id="gasChart">
+										<div class="title_one" style="color:#0b409c;">가스</div>
+										<div class="chartZone">
+											<div class="chartOne">&nbsp;</div>
+											<div class="chartTwo">&nbsp;</div>
+											<div class="name one">50Kg</div>
+											<div class="name two">31kg</div>
+										</div>
+										<div class="subTitle_one">다른집</div>
+										<div class="subTitle_two">우리집</div>
+									</div>
+
+									<div class="otherChart" id="waterChart">
+										<div class="title_one" style="color:#2f89fc;">수도</div>
+										<div class="chartZone">
+											<div class="chartOne">&nbsp;</div>
+											<div class="chartTwo">&nbsp;</div>
+											<div class="name one">50Kg</div>
+											<div class="name two">31kg</div>
+										</div>
+										<div class="subTitle_one">다른집</div>
+										<div class="subTitle_two">우리집</div>
+									</div>
+
+									<div class="otherChart" id="carChart">
+										<div class="title_one" style="color:#ff4d4d;">교통</div>
+										<div class="chartZone">
+											<div class="chartOne">&nbsp;</div>
+											<div class="chartTwo">&nbsp;</div>
+											<div class="name one">50Kg</div>
+											<div class="name two">31kg</div>
+										</div>
+										<div class="subTitle_one">다른집</div>
+										<div class="subTitle_two">우리집</div>
+									</div>
+
+								</div>
+							</div>
+							<div class="step3" style="display:none;">
+								<img src="{% static 'assets/img/co2/btn_next.png' %}" alt="다음" class="nextBtn">
+								<img src="{% static 'assets/img/co2/btn_prev.png' %}" alt="이전" class="prevBtn">
+
+								<div class="alertMsg">우리집 실천목표! 생활 속에서 실천가능한 목표를 선택해주세요.</div>
+
+								<div class="left">
+									<ul class="menu">
+										<li class="on"><img src="{% static 'assets/img/co2/step2_icon1_on.png' %}" alt="전기"></li>
+										<li><img src="{% static 'assets/img/co2/step2_icon2.png' %}" alt="가스"></li>
+										<li><img src="{% static 'assets/img/co2/step2_icon3.png' %}" alt="수도"></li>
+										<li><img src="{% static 'assets/img/co2/step2_icon4.png' %}" alt="교통"></li>
+									</ul>
+									<div id="step3_1" class="detail">
+										<p style="color:#8045dd;">전기</p>
+										<ul>
+											<li>
+												하루 1시간은 에어컨 대신 선풍기로!
+												<input type="hidden" name="elec_idx" value="0">
+												<input type="hidden" name="energy" value="6.9">
+												<input type="hidden" name="co2" value="3.2">
+												<input type="hidden" name="price" value="1293">
+											</li>
+											<li>
+												세탁은 모아서 해도 잘 된답니다.
+												<input type="hidden" name="elec_idx" value="1">
+												<input type="hidden" name="energy" value="1.2">
+												<input type="hidden" name="co2" value="0.6">
+												<input type="hidden" name="price" value="226">
+											</li>
+											<li>
+												전기밥솥 보온기능은 전기 먹는 하마
+												<input type="hidden" name="elec_idx" value="2">
+												<input type="hidden" name="energy" value="12.6">
+												<input type="hidden" name="co2" value="5.9">
+												<input type="hidden" name="price" value="2368">
+											</li>
+											<li>
+												냉장실은 60% 채우면 효율이 최고!
+												<input type="hidden" name="elec_idx" value="3">
+												<input type="hidden" name="energy" value="2.1">
+												<input type="hidden" name="co2" value="1.0">
+												<input type="hidden" name="price" value="395">
+											</li>
+											<li>
+												컴퓨터 절전프로그램(그린터치) 사용
+												<input type="hidden" name="elec_idx" value="4">
+												<input type="hidden" name="energy" value="3.5">
+												<input type="hidden" name="co2" value="1.6">
+												<input type="hidden" name="price" value="653">
+											</li>
+											<li>
+												TV 시청 줄이고 가족과 대화 늘리고!
+												<input type="hidden" name="elec_idx" value="5">
+												<input type="hidden" name="energy" value="3.9">
+												<input type="hidden" name="co2" value="1.8">
+												<input type="hidden" name="price" value="725">
+											</li>
+										</ul>
+									</div>
+									<div id="step3_2" class="detail" style="display:none;">
+										<p style="color:#0b409c;">가스</p>
+										<ul>
+											<li>
+												겨울철 난방온도는 20℃가 적당해요.
+												<input type="hidden" name="gas_idx" value="0">
+												<input type="hidden" name="energy" value="6.6">
+												<input type="hidden" name="co2" value="14.6">
+												<input type="hidden" name="price" value="5427">
+											</li>
+											<li>
+												보일러 사용시간 1시간만 줄여요.
+												<input type="hidden" name="gas_idx" value="1">
+												<input type="hidden" name="energy" value="12.8">
+												<input type="hidden" name="co2" value="28.3">
+												<input type="hidden" name="price" value="10518">
+											</li>
+										</ul>
+									</div>
+									<div id="step3_3" class="detail" style="display:none;">
+										<p style="color:#2f88fc;">수도</p>
+										<ul>
+											<li>
+												절수기로 물낭비를 쉽게 막아요.
+												<input type="hidden" name="water_idx" value="0">
+												<input type="hidden" name="energy" value="11.8">
+												<input type="hidden" name="co2" value="3.9">
+												<input type="hidden" name="price" value="7760">
+											</li>
+											<li>
+												물을 받아서 설거지 해요.
+												<input type="hidden" name="water_idx" value="1">
+												<input type="hidden" name="energy" value="1.2">
+												<input type="hidden" name="co2" value="0.4">
+												<input type="hidden" name="price" value="804">
+											</li>
+											<li>
+												짧게 샤워하는 그대가 진정한 멋쟁이!
+												<input type="hidden" name="water_idx" value="2">
+												<input type="hidden" name="energy" value="1.7">
+												<input type="hidden" name="co2" value="0.6">
+												<input type="hidden" name="price" value="1090">
+											</li>
+										</ul>
+									</div>
+									<div id="step3_4" class="detail" style="display:none;">
+										<p style="color:#ff4d4d;">교통</p>
+										<ul>
+											<li>
+												도보와 자전거로 건강도 UP!
+												<input type="hidden" name="car_idx" value="0">
+												<input type="hidden" name="energy" value="1.0">
+												<input type="hidden" name="co2" value="2.1">
+												<input type="hidden" name="price" value="1473">
+											</li>
+											<li>
+												1주일에 한번쯤은 대중교통 어때요?
+												<input type="hidden" name="car_idx" value="1">
+												<input type="hidden" name="energy" value="18.2">
+												<input type="hidden" name="co2" value="39.1">
+												<input type="hidden" name="price" value="27502">
+											</li>
+											<li>
+												경제속도는 60~80km/h, 연비 최고!
+												<input type="hidden" name="car_idx" value="2">
+												<input type="hidden" name="energy" value="2.6">
+												<input type="hidden" name="co2" value="5.5">
+												<input type="hidden" name="price" value="3864">
+											</li>
+											<li>
+												불필요한 짐은 트렁크에서 OUT!
+												<input type="hidden" name="car_idx" value="3">
+												<input type="hidden" name="energy" value="2.2">
+												<input type="hidden" name="co2" value="4.7">
+												<input type="hidden" name="price" value="3285">
+											</li>
+											<li>
+												타이어 공기압 체크, 연료비 DOWN!
+												<input type="hidden" name="car_idx" value="4">
+												<input type="hidden" name="energy" value="3.2">
+												<input type="hidden" name="co2" value="6.9">
+												<input type="hidden" name="price" value="4821">
+											</li>
+											<li>
+												실시간 네비게이션, 더 빠른 길로 GO!
+												<input type="hidden" name="car_idx" value="5">
+												<input type="hidden" name="energy" value="15.2">
+												<input type="hidden" name="co2" value="32.6">
+												<input type="hidden" name="price" value="22933">
+											</li>
+										</ul>
+									</div>
+									<div class="result_middle">
+										<div class="result_middle_title">
+											<img src="{% static 'assets/img/co2/step3_check.png' %}" alt="check"> 선택한 실천목표의 효과
+										</div>
+
+										<ul>
+											<li>에너지 : <div class="target_energy">-</div><span>kWh</span></li>
+											<li>CO₂ : <div class="target_co2">-</div><span>kg</span></li>
+											<li>비용 : <div class="target_price">-</div><span>원</span> 절약</li>
+										</ul>
+									</div>
+								</div>
+								<div class="right">
+									<div class="result_sale">
+										<table width="100%" cellpadding="0" cellspacing="0">
+											<colgroup>
+												<col width="145">
+												<col width="90">
+												<col width="100">
+												<col width="*">
+											</colgroup>
+											<tbody><tr>
+												<td colspan="4" style="height:55px;"></td>
+											</tr>
+											<tr style="color:#8045dd; ">
+												<td style="text-align:center; color:#000;">전기</td>
+												<td><span class="step3_elec_1">0</span><span class="kg">kg</span></td>
+												<td class="lineTd"><span class="step3_elec_2">0</span><span class="kg">원</span></td>
+												<td></td>
+											</tr>
+											<tr style="color:#0b409c; height:25px;">
+												<td style="text-align:center; color:#000;">가스</td>
+												<td><span class="step3_gas_1">0</span><span class="kg">kg</span></td>
+												<td class="lineTd"><span class="step3_gas_2">0</span><span class="kg">원</span></td>
+												<td></td>
+											</tr>
+											<tr style="color:#2f88fc; height:22px;">
+												<td style="text-align:center; color:#000;">수도</td>
+												<td><span class="step3_water_1">0</span><span class="kg">kg</span></td>
+												<td class="lineTd"><span class="step3_water_2">0</span><span class="kg">원</span></td>
+												<td></td>
+											</tr>
+											<tr style="color:#ff4d4d; height:24px;">
+												<td style="text-align:center; color:#000;">교통</td>
+												<td><span class="step3_car_1">0</span><span class="kg">kg</span></td>
+												<td class="lineTd"><span class="step3_car_2">0</span><span class="kg">원</span></td>
+												<td></td>
+											</tr>
+											<tr style="color:#ff4d4d; height:50px; color:#fff; background:url('{% static 'assets/img/co2/step2_right_sum.jpg' %}') 25px 7px no-repeat; ">
+												<td style="text-align:center; ">총 합계</td>
+												<td><span class="step3_total_1">0</span><span class="kg" style="color:#fff">kg</span></td>
+												<td style="background:url('{% static 'assets/img/co2/step2_right_line2.jpg' %}') 18px 20px no-repeat;"><span class="step3_total_2">0</span><span class="kg" style="color:#fff">원</span></td>
+												<td></td>
+											</tr>
+										</tbody></table>
+									</div>
+
+									<div class="result_bottom">
+										<div class="chartArea">
+											<ul>
+												<li>
+													<div class="name one">31Kg</div>
+													<div class="chartOne">&nbsp;</div>
+												</li>
+												<li>
+													<div class="name two">55Kg</div>
+													<div class="chartTwo">&nbsp;</div>
+												</li>
+												<li>
+													<div class="name three">31Kg</div>
+													<div class="chartThree">&nbsp;</div>
+												</li>
+											</ul>
+										</div>
+										<div class="subName">
+											<ul>
+												<li>다른집</li>
+												<li>우리집</li>
+												<li>목표</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="step4" style="display:none;">
+								<img src="/tanso2018/images/btn_prev.png" alt="이전" class="prevBtn">
+
+								<div class="report">
+									<h3><img src="/tanso2018/images/mail/mail_icon.png" style="vertical-align:middle" alt="icon"> <span class="name">홍길동</span> 님 가정의 종합평가</h3>
+									<div class="report_first">
+										<div class="chartZone">
+											<div class="chartArea">
+												<ul>
+													<li>
+														<div class="name one">31Kg</div>
+														<div class="chartOne">&nbsp;</div>
+													</li>
+													<li>
+														<div class="name two">55Kg</div>
+														<div class="chartTwo">&nbsp;</div>
+													</li>
+													<li>
+														<div class="name three">31Kg</div>
+														<div class="chartThree">&nbsp;</div>
+													</li>
+												</ul>
+											</div>
+											<div class="subName">
+												<ul>
+													<li>다른집</li>
+													<li>우리집</li>
+													<li>목표</li>
+												</ul>
+											</div>
+										</div>
+										<div class="report_msg">
+											<ul>
+												<li style="margin-bottom:10px;">이산화탄소 배출량은 총 <span class="step4_totalCo2">1,017kg</span> 이며,<br>비슷한 규모의 다른 가정보다<br>약 <span class="stpe4_tansoPercent">256% 더 많이 배출</span>하고 있습니다.</li>
+												<li style="margin-bottom:10px;">이만큼의 이산화탄소를 없애기 위해서는<br>약 <span class="step4_totalTree">367 그루</span>의 소나무를 심어야 합니다.</li>
+												<li>부문별로 보면 전기,가스,수도,교통의<br>4개 부문 중 <span class="overCount">2</span>개 부문에서 다른 가정보다<br>이산화탄소 배출이 많습니다.</li>
+											</ul>
+										</div>
+									</div>
+									<div class="report_second">
+										<ul class="chartUl">
+											<li style="margin-bottom:20px;">
+												<p style="color:#8045dd;">전기</p>
+												<div class="chartArea">
+													<div class="chartZone">
+														<ul>
+															<li>
+																<div class="name one">31Kg</div>
+																<div class="chartOne">&nbsp;</div>
+															</li>
+															<li>
+																<div class="name two">55Kg</div>
+																<div class="chartTwo">&nbsp;</div>
+															</li>
+															<li>
+																<div class="name three">31Kg</div>
+																<div class="chartThree">&nbsp;</div>
+															</li>
+														</ul>
+													</div>
+													<div class="subName">
+														<ul>
+															<li>다른집</li>
+															<li>우리집</li>
+															<li>목표</li>
+														</ul>
+													</div>
+												</div>
+											</li>
+											<li style="margin-left:20px;  margin-bottom:20px;">
+												<p style="color:#0b409c;">가스</p>
+												<div class="chartArea">
+													<div class="chartZone">
+														<ul>
+															<li>
+																<div class="name one">31Kg</div>
+																<div class="chartOne">&nbsp;</div>
+															</li>
+															<li>
+																<div class="name two">55Kg</div>
+																<div class="chartTwo">&nbsp;</div>
+															</li>
+															<li>
+																<div class="name three">31Kg</div>
+																<div class="chartThree">&nbsp;</div>
+															</li>
+														</ul>
+													</div>
+													<div class="subName">
+														<ul>
+															<li>다른집</li>
+															<li>우리집</li>
+															<li>목표</li>
+														</ul>
+													</div>
+												</div>
+											</li>
+											<li>
+												<p style="color:#2f88fc;">수도</p>
+												<div class="chartArea">
+													<div class="chartZone">
+														<ul>
+															<li>
+																<div class="name one">31Kg</div>
+																<div class="chartOne">&nbsp;</div>
+															</li>
+															<li>
+																<div class="name two">55Kg</div>
+																<div class="chartTwo">&nbsp;</div>
+															</li>
+															<li>
+																<div class="name three">31Kg</div>
+																<div class="chartThree">&nbsp;</div>
+															</li>
+														</ul>
+													</div>
+													<div class="subName">
+														<ul>
+															<li>다른집</li>
+															<li>우리집</li>
+															<li>목표</li>
+														</ul>
+													</div>
+												</div>
+											</li>
+											<li style="margin-left:20px;">
+												<p style="color:#ff4d4d;">교통</p>
+												<div class="chartArea">
+													<div class="chartZone">
+														<ul>
+															<li>
+																<div class="name one">31Kg</div>
+																<div class="chartOne">&nbsp;</div>
+															</li>
+															<li>
+																<div class="name two">55Kg</div>
+																<div class="chartTwo">&nbsp;</div>
+															</li>
+															<li>
+																<div class="name three">31Kg</div>
+																<div class="chartThree">&nbsp;</div>
+															</li>
+														</ul>
+													</div>
+													<div class="subName">
+														<ul>
+															<li>다른집</li>
+															<li>우리집</li>
+															<li>목표</li>
+														</ul>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+
+									<div class="report_bottom">
+										<ul>
+											<li><span class="tansoName3">홍길동</span>님 가정에서 이산화탄소 배출을 줄이는 실천을 하시면<br>약 <span class="saleResultCo2" style="color:#ddf516;">0kg</span> 의 이산화탄소를 줄이고 <span class="saleResultPrice" style="color:#ddf516;">0원</span>의 비용절감 효과가 예상됩니다.<br>이는 <span class="saleResultTree">0그루</span>의 소나무를 심는 효과와 같습니다.</li>
+											<li style="font-size:14px; margin-top:7px;">최종결과를 저장하세요.<br><img src="/tanso2018/images/step4_btn01.jpg" alt="다운로드" style="cursor:pointer; margin-top:10px;" onclick="saveData('down')"> <img src="/tanso2018/images/step4_btn02.jpg" alt="이메일로 받기" style="cursor:pointer;" onclick="agreeMail();"></li>
+											<!--<li style=" margin-top:10px; font-size:15px; font-weight:bold; font-family:Noto Sans KR; line-height:20px;">결과보기 내용을 다운로드 하시겠습니까?<a href="javascript:saveData('down')" style="color:#ddf516; font-family:Noto Sans KR;">[다운로드]</a></li>
+
+											  <li style="font-size:15px; font-weight:bold; font-family:Noto Sans KR; line-height:20px;">결과보기 내용을 이메일로 받으시겠습니까?<a href="javascript:agreeMail();" style="color:#ddf516; font-family:Noto Sans KR;">[이메일로 받기]</a></li>-->
+										</ul>
+									</div>
+								</div>
+
+								<div class="report_right" style="display:none;">
+									<div class="report_top">
+										<table width="100%">
+											<colgroup>
+												<col width="90">
+												<col width="69">
+												<col width="84">
+												<col width="*">
+											</colgroup>
+											<tbody><tr>
+												<td colspan="4" style="height:35px;"></td>
+											</tr>
+											<tr style="color:#8045dd; ">
+												<td></td>
+												<td><span class="step4_elec_1">0</span></td>
+												<td><span class="step4_elec_2">0</span></td>
+												<td></td>
+											</tr>
+											<tr style="color:#0b409c; height:22px;">
+												<td></td>
+												<td><span class="step4_gas_1">0</span></td>
+												<td><span class="step4_gas_2">0</span></td>
+												<td></td>
+											</tr>
+											<tr style="color:#2f88fc; height:22px;">
+												<td></td>
+												<td><span class="step4_water_1">0</span></td>
+												<td><span class="step4_water_2">0</span></td>
+												<td></td>
+											</tr>
+											<tr style="color:#ff4d4d; height:22px;">
+												<td></td>
+												<td><span class="step4_car_1">0</span></td>
+												<td><span class="step4_car_2">0</span></td>
+												<td></td>
+											</tr>
+											<tr style="color:#ff4d4d; height:25px; color:#fff;">
+												<td></td>
+												<td><span class="step4_total_1">0</span></td>
+												<td><span class="step4_total_2">0</span></td>
+												<td></td>
+											</tr>
+										</tbody></table>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="shadow">
+						<div class="shadow_input">
+							<div class="closeZone"><img src="/tanso2018/images/closeBtn.jpg" alt="이메일 닫기"></div>
+							<h3><span class="mailName">홍길동</span> 님의 이메일 주소 입력</h3>
+							<div class="shadowDiv">
+								<input type="text" name="emailId" id="emailId" title="이메일 아이디" style="width:200px; margin-left:30px;"> <b>@</b>
+								<input type="text" name="emailAddress" id="emailAddress" title="이메일 주소" style="width:200px;">
+								<select name="selAddress">
+									<option selected="selected" value="">메일선택</option>
+									<option value="naver.com">naver.com</option>
+									<option value="hanmail.net">hanmail.net</option>
+									<option value="daum.net">daum.net</option>
+									<option value="empas.com">empas.com</option>
+									<option value="hotmail.com">hotmail.com</option>
+									<option value="nate.com">nate.com</option>
+									<option value="gmail.com">gmail.com</option>
+									<option value="dreamwiz.com">dreamwiz.com</option>
+									<option value="nate.com">nate.com</option>
+								</select>
+
+							</div>
+
+							<h4>개인정보 수집·이용 동의</h4>
+							<div class="shadowDiv">
+								<div style="margin-top:20px;">한국기후·환경네트워크는 탄소발자국 계산기 종합평가 이메일 발송을 위해 다음과 같이 개인정보를 수집·이용합니다.</div>
+								<div style="margin-bottom:20px; line-height:20px; margin-top:15px;">수집하는 개인정보 항목 : 이메일<br>개인정보의 수집 및 이용목적 : 탄소발자국계산기 종합평가 이메일 발송<br>개인정보의 보유 및 이용기간 : 발송 즉시 폐기<br>※ 사용자는 개인정보 수집 및 이용을 거부할 권리가 있습니다. 단, 이메일 발송이 불가합니다.</div>
+							</div>
+							<div class="agreeDiv">
+								<input type="radio" name="mailAgree" id="mailAgree" value="0">
+								<label for="mailAgree">개인정보 수집 및 이용에 동의함</label>
+							</div>
+							<div style="text-align:center;">
+								<input type="button" value="작성완료" class="btnBase sendMail">
+								<input type="button" value="취소" class="btnBase close" style="background:#a8a8a8;">
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+
+				<div class="page3" style="display:none;">
+					<div class="section">
+
+						<div class="pageDiv">
+							<div class="tapMenu">
+								<ul>
+									<li class="on">전기</li>
+									<li>가스</li>
+									<li>수도</li>
+									<li>교통</li>
+								</ul>
+							</div>
+
+							<div class="contentDiv" id="content_1">
+								<ul>
+									<li>
+										<div class="icon"><img src="/tanso2018/images/page3_icon1.jpg" alt="하루1시간은 에어컨대신 선풍기로"></div>
+										<div class="msg"><span>하루 1시간</span>은<br>에어컨 대신 선풍기로!</div>
+										<div class="price1">6.9kWh</div>
+										<div class="price2">3.2kg</div>
+										<div class="price3">1,293원</div>
+									</li>
+									<li>
+										<div class="icon"><img src="/tanso2018/images/page3_icon2.jpg" alt="세탁은 모아서 해도 잘 된답니다."></div>
+										<div class="msg"><span>세탁은 모아서</span> 해도<br>잘 된답니다.</div>
+										<div class="price1">1.2kWh</div>
+										<div class="price2">0.6kg</div>
+										<div class="price3" style="left:220px;">226원</div>
+									</li>
+									<li>
+										<div class="icon"><img src="/tanso2018/images/page3_icon3.jpg" alt="전기밥솥 보온기능은 전기 먹는 하마"></div>
+										<div class="msg"><span>전기밥솥 보온기능</span>은<br>전기 먹는 하마</div>
+										<div class="price1">12.6kWh</div>
+										<div class="price2">5.9kg</div>
+										<div class="price3">2,368원</div>
+									</li>
+									<li>
+										<div class="icon"><img src="/tanso2018/images/page3_icon4.jpg" alt="하루1시간은 에어컨대신 선풍기로"></div>
+										<div class="msg"><span>냉장실은 60%</span><br>채우면 효율이 최고!</div>
+										<div class="price1">2.1kWh</div>
+										<div class="price2">1.0kg</div>
+										<div class="price3" style="left:218px;">395원</div>
+									</li>
+									<li>
+										<div class="icon"><img src="/tanso2018/images/page3_icon5.jpg" alt="하루1시간은 에어컨대신 선풍기로"></div>
+										<div class="msg">컴퓨터 절전프로그램<br><span>(그린터치) 사용</span></div>
+										<div class="price1">3.5kWh</div>
+										<div class="price2">1.6kg</div>
+										<div class="price3">653원</div>
+									</li>
+									<li>
+										<div class="icon"><img src="/tanso2018/images/page3_icon6.jpg" alt="하루1시간은 에어컨대신 선풍기로"></div>
+										<div class="msg"><span>TV 시청 줄이고</span><br>가족과 대화 늘리고!</div>
+										<div class="price1">3.9kWh</div>
+										<div class="price2">1.8kg</div>
+										<div class="price3">725원</div>
+									</li>
+								</ul>
+
+								<!-- 가스 -->
+								<ul style="display:none;">
+									<li>
+										<div class="icon"><img src="/tanso2018/images/page3_icon7.jpg" alt="겨울철 난방온도는 20℃가 적당해요"></div>
+										<div class="msg">겨울철 난방온도는<br><span>20℃가 적당</span>해요.</div>
+										<div class="price1">6.6m³</div>
+										<div class="price2">14.6Kg</div>
+										<div class="price3">5,427원</div>
+									</li>
+
+									<li>
+										<div class="icon"><img src="/tanso2018/images/page3_icon8.jpg" alt="보일러 사용시간은 1시간만 줄여요"></div>
+										<div class="msg"><span>보일러 사용시간</span>은<br><span>1시간</span>만 줄여요.</div>
+										<div class="price1">12.8m³</div>
+										<div class="price2">28.3Kg</div>
+										<div class="price3">10,518원</div>
+									</li>
+
+								</ul>
+
+								<!-- 수도 -->
+								<ul style="display:none;">
+									<li>
+										<div class="icon"><img src="/tanso2018/images/page3_icon9.jpg" alt="절수기로 물낭비를 쉽게막아요"></div>
+										<div class="msg"><span>절수기로 물낭비</span>를<br>쉽게 막아요.</div>
+										<div class="price1">11.8m³</div>
+										<div class="price2">3.9Kg</div>
+										<div class="price3">7,760원</div>
+									</li>
+
+									<li>
+										<div class="icon"><img src="/tanso2018/images/page3_icon10.jpg" alt="물을 받아서 설거지 해요"></div>
+										<div class="msg"><span>물을 받아서</span><br>설거지 해요.</div>
+										<div class="price1">1.2m³</div>
+										<div class="price2">0.4Kg</div>
+										<div class="price3">804원</div>
+									</li>
+
+									<li>
+										<div class="icon"><img src="/tanso2018/images/page3_icon11.jpg" alt="짧게 샤워하는 그대가 진정한 멋쟁이"></div>
+										<div class="msg"><span>짧게 샤워하는 그대</span>가<br>진정한 멋쟁이!</div>
+										<div class="price1">1.7m³</div>
+										<div class="price2">0.6Kg</div>
+										<div class="price3">1,090원</div>
+									</li>
+
+								</ul>
+
+								<!-- 교통 -->
+								<ul style="display:none;">
+									<li>
+										<div class="icon"><img src="/tanso2018/images/page3_icon12.jpg" alt="도보와 자전거로 건강도 UP"></div>
+										<div class="msg">도보와 자전거로<br><span>건강도 UP!</span></div>
+										<div class="price1">1.0L</div>
+										<div class="price2">2.1Kg</div>
+										<div class="price3">7,760원</div>
+									</li>
+
+									<li>
+										<div class="icon"><img src="/tanso2018/images/page3_icon13.jpg" alt="1주일에 한번쯤은 대중교통 어때요"></div>
+										<div class="msg"><span>1주일에 한번</span>쯤은<br>대중교통 어때요?</div>
+										<div class="price1">18.2L</div>
+										<div class="price2">39.1Kg</div>
+										<div class="price3">27,502원</div>
+									</li>
+
+									<li>
+										<div class="icon"><img src="/tanso2018/images/page3_icon14.jpg" alt="경제 속도는 60~80km/h 연비 최고"></div>
+										<div class="msg"><span style="letter-spacing:-1px;">경제 속도는 60~80㎞/h</span><br>연비 최고!</div>
+										<div class="price1">2.6L</div>
+										<div class="price2">5.5Kg</div>
+										<div class="price3">3,864원</div>
+									</li>
+
+									<li>
+										<div class="icon"><img src="/tanso2018/images/page3_icon15.jpg" alt="불필요한 짐은 트렁크에서 OUT"></div>
+										<div class="msg">불필요한 짐은<br><span>트렁크에서 OUT!</span></div>
+										<div class="price1">2.2L</div>
+										<div class="price2">4.7Kg</div>
+										<div class="price3">3,285원</div>
+									</li>
+
+									<li>
+										<div class="icon"><img src="/tanso2018/images/page3_icon16.jpg" alt="타이어 공기압 체크 연료비 DOWN"></div>
+										<div class="msg">타이어 공기압 체크<br><span>연료비 DOWN!</span></div>
+										<div class="price1">3.2L</div>
+										<div class="price2">6.9Kg</div>
+										<div class="price3">4,821원</div>
+									</li>
+
+									<li>
+										<div class="icon"><img src="/tanso2018/images/page3_icon17.jpg" alt="실시간 네비게이션 더 빠른 길로 GO"></div>
+										<div class="msg">실시간 네비게이션<br><span>더 빠른 길로 GO!</span></div>
+										<div class="price1">15.2L</div>
+										<div class="price2">32.6Kg</div>
+										<div class="price3">22,933원</div>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+
+	</div>
+
+	<form name="downF" action="/tanso/downfile.green" method="post">
+		<input type="hidden" name="memberIdx" value="">
+	</form>
+
+
+
+
+</body></html>
+
+        <!-- Blog Area End -->
+    </main>
+    <footer>
+        <div class="footer-wrapper">
+           <!-- Footer Start-->
+
+           <!-- footer-bottom area -->
+
+              <!-- Footer End-->
+          </div>
+      </footer>
+      <!-- Scroll Up -->
+      <div id="back-top" >
+        <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+    </div>
+    <!-- JS here -->
+
+
+    <script src="{% static 'assets/js/vendor/modernizr-3.5.0.min.js' %}"></script>
+    <!-- Jquery, Popper, Bootstrap -->
+    <script src="{% static 'assets/js/vendor/jquery-1.12.4.min.js' %}"></script>
+    <script src="{% static 'assets/js/popper.min.js' %}"></script>
+    <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+    <!-- Jquery Mobile Menu -->
+    <script src="{% static 'assets/js/jquery.slicknav.min.js' %}"></script>
+
+    <!-- Jquery Slick , Owl-Carousel Plugins -->
+    <script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'assets/js/slick.min.js' %}"></script>
+    <!-- One Page, Animated-HeadLin -->
+    <script src="{% static 'assets/js/wow.min.js' %}"></script>
+    <script src="{% static 'assets/js/animated.headline.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.magnific-popup.js' %}"></script>
+
+    <!-- Date Picker -->
+    <script src="{% static 'assets/js/gijgo.min.js' %}"></script>
+    <!-- Nice-select, sticky -->
+    <script src="{% static 'assets/js/jquery.nice-select.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.sticky.js' %}"></script>
+    <!-- Progress -->
+    <script src="{% static 'assets/js/jquery.barfiller.js' %}"></script>
+
+    <!-- counter , waypoint,Hover Direction -->
+    <script src="{% static 'assets/js/jquery.counterup.min.js' %}"></script>
+    <script src="{% static 'assets/js/waypoints.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.countdown.min.js' %}"></script>
+    <script src="{% static 'assets/js/hover-direction-snake.min.js' %}"></script>
+
+    <!-- contact js -->
+    <script src="{% static 'assets/js/contact.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.form.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.validate.min.js' %}"></script>
+    <script src="{% static 'assets/js/mail-script.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.ajaxchimp.min.js' %}"></script>
+
+    <!-- Jquery Plugins, main Jquery -->
+    <script src="{% static 'assets/js/plugins.js' %}"></script>
+    <script src="{% static 'assets/js/main.js' %}"></script>
+    
+</body>
+</html>

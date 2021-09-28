@@ -1,0 +1,431 @@
+@charset "UTF-8";
+
+@import url('/tanso2018/css/notosans.css');
+
+@font-face {
+ font-family: 'NanumSquare';
+ font-weight: 400;
+ src: url(https://raw.githubusercontent.com/moonspam/NanumSquare/master/NanumSquareR.eot);
+ src: url(https://raw.githubusercontent.com/moonspam/NanumSquare/master/NanumSquareR.eot?#iefix) format('embedded-opentype'),
+      url(https://raw.githubusercontent.com/moonspam/NanumSquare/master/NanumSquareR.woff) format('woff'),
+      url(https://raw.githubusercontent.com/moonspam/NanumSquare/master/NanumSquareR.ttf) format('truetype');
+}
+@font-face {
+ font-family: 'NanumSquare';
+ font-weight: 700;
+ src: url(https://raw.githubusercontent.com/moonspam/NanumSquare/master/NanumSquareB.eot);
+ src: url(https://raw.githubusercontent.com/moonspam/NanumSquare/master/NanumSquareB.eot?#iefix) format('embedded-opentype'),
+      url(https://raw.githubusercontent.com/moonspam/NanumSquare/master/NanumSquareB.woff) format('woff'),
+      url(https://raw.githubusercontent.com/moonspam/NanumSquare/master/NanumSquareB.ttf) format('truetype');
+}
+@font-face {
+ font-family: 'NanumSquare';
+ font-weight: 800;
+ src: url(https://raw.githubusercontent.com/moonspam/NanumSquare/master/NanumSquareEB.eot);
+ src: url(https://raw.githubusercontent.com/moonspam/NanumSquare/master/NanumSquareEB.eot?#iefix) format('embedded-opentype'),
+      url(https://raw.githubusercontent.com/moonspam/NanumSquare/master/NanumSquareEB.woff) format('woff'),
+      url(https://raw.githubusercontent.com/moonspam/NanumSquare/master/NanumSquareEB.ttf) format('truetype');
+}
+@font-face {
+ font-family: 'NanumSquare';
+ font-weight: 300;
+ src: url(https://raw.githubusercontent.com/moonspam/NanumSquare/master/NanumSquareL.eot);
+ src: url(https://raw.githubusercontent.com/moonspam/NanumSquare/master/NanumSquareL.eot?#iefix) format('embedded-opentype'),
+      url(https://raw.githubusercontent.com/moonspam/NanumSquare/master/NanumSquareL.woff) format('woff'),
+      url(https://raw.githubusercontent.com/moonspam/NanumSquare/master/NanumSquareL.ttf) format('truetype');
+}
+
+html, body {margin:0; padding:0; }
+* {font-family:'NanumSquare','Nanum Gothic', sans-serif, 'Dotum', 'Gulim', 'Arial', sans-serif; }
+ul { position:relative; overflow:hidden; margin:0; padding:0; }
+ul li {list-style:none; }
+
+a {text-decoration:none; color:#000;}
+
+.left {float:left;}
+.right {float:right;}
+
+div.section { width:1180px; height:100%; margin:0 auto; position:relative; overflow:hidden; }
+
+div#header {height:70px; border-bottom:1px solid #dbdbdb; padding-bottom:10px;}
+
+div#header h3#logo {position:absolute; top:0; margin-top:10px;}
+div#header div#topHeader {float:right; width:700px;	 margin-top:21px; text-align:right;}
+div#header div#topHeader ul {float:right;}
+div#header div#topHeader ul li {float:left; cursor:pointer; margin-left:33px; width:200px;  height:43px; border:3px solid #00ab69; text-align:center;  line-height:44px; color:#00ab69; font-weight:900; font-size:17px; border-radius:15px;  }
+div#header div#topHeader ul li:first-child {margin-left:0;}
+div#header div#topHeader ul li.on {background:#00ab69; color:#fff;}
+
+div#content {min-height:900px; background:url('/static/assets/img/co2/main_bg.jpg') no-repeat; background-position: center;}
+div#content div.page1 , div#content div.page1 div.section {min-height:900px; }
+div#content div.page1 div.pageMenu {width:300px; position:absolute; right:0px; top:330px;}
+div#content div.page1 div.pageMenu ul li {width:100%;}
+div#content div.page1 div.pageMenu ul li img {cursor:pointer;}
+
+div#content div.page1 div.pageDiv {width:647px; height:721px; background:url('/static/assets/img/co2/page1_bg.png') no-repeat; position:absolute; top:160px; left:160px;}
+div#content div.page1 div.pageDiv div.inputZone {margin-top:55px; margin-left:60px; font-weight:700px; }
+div#content div.page1 div.pageDiv div.inputZone h3 { color:#fff; font-weight:700; width:200px; float:left; margin-top:10px; font-size:20px;}
+div#content div.page1 div.pageDiv div.inputZone div.title {width:325px; height:44px; background:url('/static/assets/img/co2/page1_title.png') no-repeat; float:right; margin-right:57px; line-height:44px; color:#666666; text-align:center; font-size:17px; font-weight:600; }
+div#content div.page1 div.pageDiv div.inputZone div.subTitle {width:535px; height:84px; background:url('/static/assets/img/co2/page1_subTitle.png') no-repeat; position:absolute; top:115px;}
+div#content div.page1 div.pageDiv div.inputZone div.subTitle div.subTitleName { font-family:Muli, "Noto Sans KR", 나눔고딕, Dotum, 돋움, sans-serif; font-size:28px; position:absolute; left:41px; top:9px; font-weight:800; } 
+div#content div.page1 div.pageDiv div.inputZone div.subTitle div.subTitleDetail {font-family:Muli, "Noto Sans KR", 나눔고딕, Dotum, 돋움, sans-serif; font-size:16px; color:#979797; font-weight:600; position:absolute; top:14px; left:120px; }
+div#content div.page1 div.pageDiv div.inputZone div.subTitle div.subTitleDetail2 {font-family:Muli, "Noto Sans KR", 나눔고딕, Dotum, 돋움, sans-serif; font-size:16px; color:#979797; font-weight:600; position:absolute; top:40px; left:120px; }
+div#content div.page1 div.pageDiv div.inputZone div.inputName {position:absolute; font-family:Muli, "Noto Sans KR", 나눔고딕, Dotum, 돋움, sans-serif; font-weight:600; color:#fff; font-size:17px; font-weight:500; }
+div#content div.page1 div.pageDiv div.inputZone select {margin-left:69px; width:180px; height:36px; border:3px solid #ff9c00; color:#c6c6c6; font-family:Muli, "Noto Sans KR", 나눔고딕, Dotum, 돋움, sans-serif; text-indent:57px; }
+div#content div.page1 div.pageDiv div.inputZone input[type="text"] {width:330px; padding-right:15px; height:29px; border:3px solid #ff4d4d; font-family:Muli, "Noto Sans KR", 나눔고딕, Dotum, 돋움, sans-serif; color:#000; text-align:right; font-weight:bold; }
+div#content div.page1 div.pageDiv div.inputZone span { color:#e9fcff; font-size:14px; font-weight:bold; }
+
+div#content div.page1 div.pageDiv div.inputResultZone {width:627px; height:102px; background:url('/static/assets/img/co2/page1_inputResult_bg.png') no-repeat; position:absolute; top:380px; left:10px; }
+div#content div.page1 div.pageDiv div.inputResultZone div.co2 {position:relative; overflow:hidden; margin-top:16px; margin-left:335px;}
+div#content div.page1 div.pageDiv div.inputResultZone div.tree {position:relative; overflow:hidden; margin-left:335px; margin-top:15px;}
+div#content div.page1 div.pageDiv div.co2 > div , div#content div.page1 div.pageDiv div.tree > div {float:left;}
+div#content div.page1 div.pageDiv div.inputNumber {width:24px; height:26px; background:url('/static/assets/img/co2/page1_number.png') no-repeat; color:#fff; font-weight:900; text-align:center; line-height:29px; font-size:20px; margin-right:1px;}
+div#content div.page1 div.pageDiv div.dot {margin-left:2px; margin-right:2px; font-weight:900; font-size:23px; line-height:32px; }
+
+div#content div.page1 div.pageDiv div.inputTotalZone {width:627px; height:102px; background:url('/static/assets/img/co2/page1_totalResult_bg.png') no-repeat; position:absolute; top:500px; left:10px;}
+div#content div.page1 div.pageDiv div.inputTotalZone div.co2 {position:relative; overflow:hidden; margin-top:14px; margin-left:335px;}
+div#content div.page1 div.pageDiv div.inputTotalZone div.tree {position:relative; overflow:hidden; margin-top:16px; margin-left:335px;}
+
+input.nextBtn {position:absolute; bottom:45px; right:70px; }
+input.prevBtn {position:absolute; bottom:45px; left:70px; background:#d45000; }
+
+.btnBase {width:170px; height:50px;  background:#0085d4; border:3px solid #000; border-radius:30px; font-family:Muli, "Noto Sans KR", 나눔고딕, Dotum, 돋움, sans-serif; font-size:20px; color:#fff; font-weight:500; cursor:pointer;}
+
+div#content div.page2 {position:relative; overflow:hidden; }
+div#content div.page2 , div#content div.page2 div.section {min-height:900px; }
+div#content div.page2 div.pageDiv {width:1120px; height:720px; background:url('/static/assets/img/co2/page2_bg.png') no-repeat; margin:0 auto; margin-top:160px; }
+div#content div.page2 div.tapMenu {position:relative; overflow:hidden;}
+div#content div.page2 div.tapMenu ul {margin-top:58px; margin-left:217px; }
+div#content div.page2 div.tapMenu ul li {float:left; width:170px; text-align:center;  font-size:17px; font-weight:900;  cursor:pointer; background:url('/static/assets/img/co2/page2_line.png') left no-repeat; }
+div#content div.page2 div.tapMenu ul li.on {color:#01a9e3; } 
+
+
+div#content div.page2 div.shadow { display:none; width:100%; height:100%;  position:absolute;top:0px; left:0px; z-index:998;   background:#000; background-color: rgba( 0, 0, 0, 0.85 );   }
+div#content div.page2 div.shadow div.shadow_input {width:650px; height:390px; background:#fff; margin:0 auto; margin-top:255px; position:relative; overflow:hidden; padding:40px 50px;}
+div#content div.page2 div.shadow div.shadow_input h3 {color:#333333; font-size:20px; font-weight:900; margin:0;}
+div#content div.page2 div.shadow div.shadow_input h4 {color:#333333; font-size:17px; font-weight:900; margin-top:25px;}
+
+div#content div.page2 div.shadow div.shadow_input div.shadowDiv {margin-top:20px; background:#f8f8f8; border-radius:15px; width:100%; min-height:45px; padding-top:5px; position:relative; overflow:hidden; }
+div#content div.page2 div.shadow div.shadow_input div.shadowDiv input {height:30px; border:1px solid #c5c5c5; margin-top:4px; font-size:17px; font-weight:900; padding-left:10px; }
+div#content div.page2 div.shadow div.shadow_input div.shadowDiv b {color:#888; font-weight:900; }
+div#content div.page2 div.shadow div.shadow_input div.shadowDiv select {height:34px; width:135px; color:#a5a5a5; font-size:13px; font-family:Noto Sans KR;}
+div#content div.page2 div.shadow div.shadow_input div.shadowDiv > div { font-family:Noto Sans KR; font-weight:400; color:#666666; letter-spacing:-1px; font-size:14px; margin-left:20px; }
+div#content div.page2 div.shadow div.shadow_input div.agreeDiv {text-align:right; margin-right:100px; margin-top:10px;}
+div#content div.page2 div.shadow div.shadow_input div.agreeDiv label {font-size:14px; font-family:Noto Sans KR; line-height:16px;}
+
+
+div#content div.page2 div.tapMenu ul li:first-child {background:none;}
+div#content div.page2 div.tapMenu ul li:last-child {margin-right:0;}
+
+div#content div.page2 div.step1 table tr td {font-size:19px; color:#fff; font-weight:bold; height:35px; vertical-align:top;}
+div#content div.page2 div.step1 table tr td:last-child {font-size:17px;}
+div#content div.page2 div.step1 table tr td > div {display:inline-block; margin-left:35px;}
+div#content div.page2 div.step1 div.bottom {margin-top:50px;}
+div#content div.page2 div.step1 div.bottom div.msg {margin-left:10px;  position:relative; overflow:hidden; width:1070px; padding-left:70px; height:220px; background:url('/static/assets/img/co2/page2_step1_bg.jpg') no-repeat;}
+div#content div.page2 div.step1 div.bottom div.msg p {font-weight:bold; font-size:16px;}
+div#content div.page2 div.step1 div.bottom div.msg * {font-family:Muli, "Noto Sans KR", 나눔고딕, Dotum, 돋움, sans-serif; font-size:14px; }
+div#content div.page2 div.step1 div.bottom div.msg ul {margin-top:15px; margin-bottom:15px;}
+
+div#content div.page2 div.step1 div.bottom div.msg ul li::before {content: "•"; color: #01a9e4; margin-right:10px;}
+div#content div.page2 div.step1 div.bottom label {font-size:17px; font-family:Muli, "Noto Sans KR", 나눔고딕, Dotum, 돋움, sans-serif;}
+div#content div.page2 div.step1 div.bottom input[type="checkbox"] {vertical-align:middle; margin-left:80px; margin-top:-1px; }
+div#content div.page2 div.step1 div.bottom input.saveBtn { margin-left:120px; margin-top:10px; }
+
+div#content div.page2 div.step1  input[type=checkbox]{/* Double-sized Checkboxes */
+  -ms-transform: scale(1.2); /* IE */
+  -moz-transform: scale(1.2); /* FF */
+  -webkit-transform: scale(1.2); /* Safari and Chrome */
+  -o-transform: scale(1.2); /* Opera */
+  padding: 10px;
+}
+
+
+
+div#content div.page2 div.top {width:940px; height:210px; margin-top:30px; margin-left:80px; position:relative; overflow:hidden; }
+div#content div.page2 div.top div#chart_1 {float:left; width:215px; height:100%;}
+div#content div.page2 div.top div.rightText {float:right; width:710px; height:100%;}
+div#content div.page2 div.top div.rightText p.first { padding-left:5px; font-size:28px; font-weight:900; margin-top:30px; margin-bottom:15px;}
+div#content div.page2 div.top div.rightText p.second {color:#000; font-size:17px; font-weight:600; padding-left:5px; margin-top:0px; letter-spacing:-1px; line-height:28px; background:url('/static/assets/img/co2/step2_arrow.jpg') 5px 10px no-repeat; padding-left:15px; font-weight:800;  margin-top:20px; }
+div#content div.page2 div.top div.rightText span {color:#fff;}
+div#content div.page2 div.bottom {margin-top:70px; position:relative; overflow:hidden;}
+div#content div.page2 div.bottom div.firstChart {width:305px; height:265px; border:5px solid #cfecf2; border-radius:10px; margin-left:80px; background:#f3f4f9; position:relative; overflow:hidden; float:left;}
+div#content div.page2 div.bottom div.firstChart div.title_one {color:#009147; font-size:17px; font-weight:800; position:absolute; top:20px; left:30px; letter-spacing:-1px; }
+div#content div.page2 div.bottom div.firstChart div.title_two {color:#009147; font-size:17px; font-weight:800; position:absolute; top:20px; right:30px; letter-spacing:-1px; }
+div#content div.page2 div.bottom div.firstChart div.chartZone { width:250px; height:180px; margin-top:50px; margin-left:25px; border-bottom:2px solid #d7d8da; }
+div#content div.page2 div.bottom div.firstChart div.chartZone div.chartOne { width:35px;  background:url('/static/assets/img/co2/chart_bg.jpg'); position:absolute; left:30px; bottom:33px; height:170px; }
+div#content div.page2 div.bottom div.firstChart div.chartZone div.chartTwo { width:35px; background:url('/static/assets/img/co2/chart_bg_green.jpg'); height:10px; position:absolute; left:77px; bottom:33px;}
+div#content div.page2 div.bottom div.firstChart div.chartZone div.chartThree { width:35px;  background:url('/static/assets/img/co2/chart_bg.jpg'); position:absolute; left:160px; bottom:33px; height:170px; }
+div#content div.page2 div.bottom div.firstChart div.chartZone img.chartOne_icon {position:absolute; left:82px; bottom:33px; }
+div#content div.page2 div.bottom div.firstChart div.chartZone img.chartTwo_icon {position:absolute; left:220px; bottom:33px; }
+div#content div.page2 div.bottom div.firstChart div.chartZone div.chartFour { width:35px; background:url('/static/assets/img/co2/chart_bg_green.jpg'); height:10px; position:absolute; left:215px; bottom:33px;}
+div#content div.page2 div.bottom div.firstChart div.chartZone div.name {font-size:13px; font-weight:900; position:absolute; letter-spacing:-1px; }
+div#content div.page2 div.bottom div.firstChart div.chartZone div.one {left:28px; bottom:43px;}
+div#content div.page2 div.bottom div.firstChart div.chartZone div.two {left:77px; bottom:43px;}
+div#content div.page2 div.bottom div.firstChart div.chartZone div.three {left:160px; bottom:43px;}
+div#content div.page2 div.bottom div.firstChart div.chartZone div.four {left:215px; bottom:43px;}
+div#content div.page2 div.bottom div.firstChart div.subTitle_one { font-size:13px; font-weight:900; letter-spacing:-1px; position:absolute; left:30px; top:240px; }
+div#content div.page2 div.bottom div.firstChart div.subTitle_two { font-size:13px; font-weight:900; letter-spacing:-1px; position:absolute; left:78px; top:239px;  }
+div#content div.page2 div.bottom div.firstChart div.subTitle_three { font-size:13px; font-weight:900; letter-spacing:-1px; position:absolute; left:161px; top:239px;}
+div#content div.page2 div.bottom div.firstChart div.subTitle_four { font-size:13px; font-weight:900; letter-spacing:-1px; position:absolute; left:215px; top:239px;}
+
+div#content div.page2 div.bottom div.otherChart {width:140px; height:272px; border:1px solid #e1e1e1; border-radius:10px; margin-left:20px; background:#f3f4f9; position:relative; overflow:hidden; float:left;}
+div#content div.page2 div.bottom div.otherChart div.title_one { position:absolute; top:25px; left:30px;   font-size:17px; font-weight:800; letter-spacing:-1px;  }
+div#content div.page2 div.bottom div.otherChart div.chartZone { width:110px; height:187px; margin-top:50px; margin-left:15px; border-bottom:2px solid #d7d8da; }
+div#content div.page2 div.bottom div.otherChart div.subTitle_one { font-size:13px; font-weight:900; letter-spacing:-1px; position:absolute; left:25px; top:245px; }
+div#content div.page2 div.bottom div.otherChart div.subTitle_two { font-size:13px; font-weight:900; letter-spacing:-1px; position:absolute; left:75px; top:244px;  }
+div#content div.page2 div.bottom div.otherChart div.chartZone div.name {font-size:13px; font-weight:900; position:absolute; letter-spacing:-1px; }
+div#content div.page2 div.bottom div.otherChart div.chartZone div.one {left:25px; bottom:43px;}
+div#content div.page2 div.bottom div.otherChart div.chartZone div.two {left:75px; bottom:43px;}
+div#content div.page2 div.bottom div.otherChart div.chartZone div.chartOne { width:35px;  background:url('/static/assets/img/co2/chart_bg.jpg'); position:absolute; left:25px; bottom:33px; height:170px; }
+div#content div.page2 div.bottom div.otherChart div.chartZone div.chartTwo { width:35px; background:#1abb9c; height:10px; position:absolute; left:75px; bottom:33px;}
+
+div#content div.page2 div.step3 div.alertMsg {position:absolute; top:270px; left:395px; color:#fff; letter-spacing:-1px; font-family:Muli, "Noto Sans KR", 나눔고딕, Dotum, 돋움, sans-serif;  }
+div#content div.page2 div.step3 div.left { width:465px; height:525px; margin-top:85px; margin-left:105px;  overflow:hidden; position:relative; }
+div#content div.page2 div.step3 div.left ul.menu {width:80px; float:left;}
+div#content div.page2 div.step3 div.left ul.menu img {cursor:pointer;}
+div#content div.page2 div.step3 div.left > div.detail {width:383px; float:left; height:100%; background:url('/static/assets/img/co2/step2_left_bg.jpg') no-repeat; }
+div#content div.page2 div.step3 div.left > div.detail p { text-align:center; font-size:22px; font-weight:900; color:#8045dd; }
+div#content div.page2 div.step3 div.left > div.detail ul li { width:310px; height:30px;      margin:0 auto; border-radius:30px; padding-left:40px; padding-top:16px; font-weight:bold; font-size:17px; cursor:pointer; margin-bottom:15px; }
+
+div#content div.page2 div.step3 div.left div.result_middle {position:absolute; bottom:14px; left:88px; width:365px; height:65px; background:#8045dd; border-radius:20px; }
+div#content div.page2 div.step3 div.left div.result_middle div.result_middle_title {position:absolute; left:90px; top:5px; color:#fff; font-weight:500; font-family:Muli, "Noto Sans KR", 나눔고딕, Dotum, 돋움, sans-serif; }
+div#content div.page2 div.step3 div.left div.result_middle div.result_middle_title img {vertical-align:middle;}
+
+div#content div.page2 div.step3 div.left div.result_middle ul {margin-top:35px; margin-left:5px;}
+div#content div.page2 div.step3 div.left div.result_middle ul li {float:left; font-family:Muli, "Noto Sans KR", 나눔고딕, Dotum, 돋움, sans-serif; background:url('/static/assets/img/co2/step2_right_li_bg.png') left no-repeat;  padding-left:10px; color:#fff; font-weight:900; font-size:14px; margin-left:5px; letter-spacing:-1px; }
+div#content div.page2 div.step3 div.left div.result_middle ul li:first-child {margin-left:0;}
+div#content div.page2 div.step3 div.left div.result_middle ul li div {min-width:32px; padding-right:5px; text-align:right; display:inline-block; font-family:Muli, "Noto Sans KR", 나눔고딕, Dotum, 돋움, sans-serif;}
+div#content div.page2 div.step3 div.left div.result_middle ul li span {font-family:Muli, "Noto Sans KR", 나눔고딕, Dotum, 돋움, sans-serif; opacity:0.5; font-weight:400;}
+
+
+div#content div.page2 div.step3 div.left div#step3_1 ul li {  background:url("/static/assets/img/co2/step2_li_1.jpg") 25px 19px no-repeat #e7e5e6;  }
+div#content div.page2 div.step3 div.left div#step3_1 ul li.on { background:url("/static/assets/img/co2/step2_li_1_on.jpg") 25px 19px no-repeat #8045dd;  color:#fff;  }
+
+div#content div.page2 div.step3 div.left div#step3_2 ul li { background:url("/static/assets/img/co2/step2_li_2.jpg") 25px 19px no-repeat #e7e5e6;  }
+div#content div.page2 div.step3 div.left div#step3_2 ul li.on { background:url("/static/assets/img/co2/step2_li_2_on.jpg") 25px 19px no-repeat #0b409c; color:#fff;  }
+
+div#content div.page2 div.step3 div.left div#step3_3 ul li { background:url("/static/assets/img/co2/step2_li_3.jpg") 25px 19px no-repeat #e7e5e6;  }
+div#content div.page2 div.step3 div.left div#step3_3 ul li.on { background:url("/static/assets/img/co2/step2_li_3_on.jpg") 25px 19px no-repeat #2f88fc; color:#fff;  }
+
+div#content div.page2 div.step3 div.left div#step3_4 ul li { background:url("/static/assets/img/co2/step2_li_4.jpg") 25px 19px no-repeat #e7e5e6;  }
+div#content div.page2 div.step3 div.left div#step3_4 ul li.on { background:url("/static/assets/img/co2/step2_li_4_on.jpg") 25px 19px no-repeat #ff4d4d; color:#fff;  }
+
+div#content div.page2 div.step3 div.right {width:450px; float:left; margin-top:85px; margin-left:40px;}
+div#content div.page2 div.step3 div.right div.result_sale { width:400px; height:225px; background:url('/static/assets/img/co2/step2_right_bg1.jpg') no-repeat;}
+div#content div.page2 div.step3 div.right div.result_sale table tr td {text-align:right; font-size:17px; font-weight:900;  }
+
+
+div#content div.page2 div.step3 div.right div.result_bottom {height:165px; width:400px; margin-top:20px; background:url('/static/assets/img/co2/step2_right_bottom_1.jpg') no-repeat;}
+div#content div.page2 div.step3 div.right div.result_bottom div.chartArea {height:260px; border-bottom:1px solid #8bd8ee; margin-left:15px;}
+div#content div.page2 div.step3 div.right div.result_bottom div.chartArea ul {position:relative; overflow:hidden; width:210px; margin:0 auto;}
+div#content div.page2 div.step3 div.right div.result_bottom div.chartArea ul li {float:left;  width:70px; text-align:center; color:#fff; font-weight:900; padding-top:10px; height:250px; position:relative; overflow:hidden; }
+
+div#content div.page2 div.step3 div.right div.result_bottom div.subName ul {position:relative; overflow:hidden; width:210px; margin-left:102px;}
+div#content div.page2 div.step3 div.right div.result_bottom div.subName ul li {float:left;  width:70px; text-align:center; color:#fff; font-weight:900; padding-top:10px; position:relative; overflow:hidden; }
+div#content div.page2 div.step3 div.right div.result_bottom div.chartOne { width:35px;  background:url('/static/assets/img/co2/step_chart_bg.jpg'); position:absolute; height:100px; bottom:0px; left:17px; }
+div#content div.page2 div.step3 div.right div.result_bottom div.chartTwo { width:35px; background:url('/static/assets/img/co2/step_chart_bg_purple.jpg'); position:absolute; height:100px; bottom:0px; left:17px;}
+div#content div.page2 div.step3 div.right div.result_bottom div.chartThree { width:35px;  background:url('/static/assets/img/co2/step_chart_bg_yellow.jpg'); position:absolute; height:100px; bottom:0px; left:17px; }
+div#content div.page2 div.step3 div.right div.result_bottom div.name {font-size:13px; font-weight:900; position:absolute; letter-spacing:-1px; }
+div#content div.page2 div.step3 div.right div.result_bottom div.one {width:70px; text-align:center; bottom:105px;}
+div#content div.page2 div.step3 div.right div.result_bottom div.two {width:70px; text-align:center; bottom:105px;}
+div#content div.page2 div.step3 div.right div.result_bottom div.three {width:70px; text-align:center; bottom:105px;}
+
+div#content div.page2 div.step3 span.kg { color:#858585; font-weight:600; font-size:13px; margin-left:2px; }
+div#content div.page2 div.step3 table td.lineTd { background:url('/static/assets/img/co2/step2_right_line.jpg') 18px 7px no-repeat; }
+div#content div.page2 div.step3 div.result_sale table tr td {height:26px;}
+
+
+div#content div.page2 div.step4 div.report { width:905px; height:540px; background:url('/static/assets/img/co2/step4_bg.png') no-repeat; margin-left:106px; margin-top:50px; position:relative; }
+div#content div.page2 div.step4 div.report h3 {font-size:18px; font-weight:900; letter-spacing:-1px; margin-left:15px; padding-top:15px;}
+div#content div.page2 div.step4 div.report h3 span {color:#009348;}
+div#content div.page2 div.closeZone {cursor:pointer; position:absolute; right:25px; top:25px;}
+
+div#content div.page2 div.step4 div.report div.report_first div.chartZone { width:245px; height:160px; margin-top:95px; margin-left:30px; }
+div#content div.page2 div.step4 div.report div.report_first div.chartZone div.chartArea {height:120px; width:190px; margin:0 auto; border-bottom:1px solid #8bd8ee; }
+div#content div.page2 div.step4 div.report div.report_first div.chartZone div.chartArea ul {margin:0 auto; position:relative; overflow:hidden; width:180px; }
+div#content div.page2 div.step4 div.report div.report_first div.chartZone div.chartArea ul li {width:60px; height:120px; float:left; text-align:center; position:relative; overflow:hidden;}
+div#content div.page2 div.step4 div.report div.report_first div.chartZone div.subName ul {margin:0 auto; position:relative; overflow:hidden; width:180px; }
+div#content div.page2 div.step4 div.report div.report_first div.chartZone div.subName ul li {width:60px; float:left; text-align:center; font-weight:900; margin-top:10px; font-family:'Noto Sans Kr'; }
+
+div#content div.page2 div.step4 div.report div.report_first div.report_msg {margin-left:25px; margin-top:0px;}
+div#content div.page2 div.step4 div.report div.report_first div.report_msg ul {width:250px; margin-top:0;}
+div#content div.page2 div.step4 div.report div.report_first div.report_msg ul li {background:url('/static/assets/img/co2/li_bg_yellow.jpg') left 8px no-repeat; padding-left:10px; font-size:14px; font-weight:600; letter-spacing:-1px; line-height:20px; font-family:'Noto Sans Kr'; white-space:nowrap; }
+div#content div.page2 div.step4 div.report div.report_first div.report_msg ul li span { color:#ff4d4d; font-family:'Noto Sans Kr'; }
+
+div#content div.page2 div.step4 div.report div.report_first div.chartOne { width:35px;  background:url('/static/assets/img/co2/step_chart_bg.jpg'); position:absolute; height:100px; bottom:0px; left:10px; }
+div#content div.page2 div.step4 div.report div.report_first div.chartTwo { width:35px; background:url('/static/assets/img/co2/step_chart_bg_purple.jpg'); position:absolute; height:100px; bottom:0px; left:10px;}
+div#content div.page2 div.step4 div.report div.report_first div.chartThree { width:35px;  background:url('/static/assets/img/co2/step_chart_bg_yellow.jpg'); position:absolute; height:100px; bottom:0px; left:10px; }
+div#content div.page2 div.step4 div.report div.report_first div.name {font-size:13px; font-weight:900; position:absolute; letter-spacing:-1px; }
+div#content div.page2 div.step4 div.report div.report_first div.one {width:55px; text-align:center; bottom:105px;}
+div#content div.page2 div.step4 div.report div.report_first div.two {width:55px; text-align:center; bottom:105px;}
+div#content div.page2 div.step4 div.report div.report_first div.three {width:55px; text-align:center; bottom:105px;}
+div#content div.page2 div.step4 div.report div.report_bottom {width:530px; height:150px; position:absolute; bottom:0; right:20px; }
+
+div#content div.page2 div.step4 div.report div.report_bottom ul:first-child { margin-left:5px; width:520px;}
+div#content div.page2 div.step4 div.report div.report_bottom ul:first-child li {background:url('/static/assets/img/co2/li_bg_yellow.jpg') left 8px no-repeat; padding-left:10px; font-size:15px; font-weight:500; letter-spacing:-1px; line-height:22px; color:#fff; font-family:'Noto Sans Kr';  }
+div#content div.page2 div.step4 div.report div.report_bottom ul:first-child li span { font-family:'Noto Sans Kr'; }
+div#content div.page2 div.step4 div.report div.report_bottom ul:first-child li hr {visibility:hidden; margin:5px 0;}
+div#content div.page2 div.step4 div.report div.report_bottom ul:first-child li a {display:block;}
+
+
+
+
+div#content div.page2 div.step4 div.report_left {width:600px; float:left; height:545px; background:url('/static/assets/img/co2/step4_report_left.jpg') no-repeat; margin-left:105px; margin-top:45px; }
+div#content div.page2 div.step4 div.report_first {position:relative; overflow:hidden; width:290px; float:left; }
+div#content div.page2 div.step4 div.report_second {position:relative; overflow:hidden; width:595px; height:285px; float:left; margin-left:10px;}
+div#content div.page2 div.step4 div.report_left h3 { }
+
+
+
+
+div#content div.page2 div.step4 div.report_second  ul.chartUl {margin-left:70px;}
+div#content div.page2 div.step4 div.report_second  ul.chartUl > li { width:235px; height:130px;  background:#f3f4f5; border-radius:10px; margin-left:5px; float:left; margin-left:0; margin-bottom:10px; position:relative;}
+div#content div.page2 div.step4 div.report_second  ul.chartUl > li:nth-child(even) {margin-left:10px;}
+
+div#content div.page2 div.step4 div.report_second  ul.chartUl > li p { font-weight:900; margin-left:15px; margin-bottom:5px; }
+div#content div.page2 div.step4 div.report_second  ul.chartUl > li div.chartArea {width:225px; height:85px;}
+div#content div.page2 div.step4 div.report_second  ul.chartUl > li div.chartArea div.chartZone { width:225px; height:70px; margin-left:5px; }
+div#content div.page2 div.step4 div.report_second  ul.chartUl > li div.chartArea div.chartZone ul  {position:relative; overflow:hidden;}
+div#content div.page2 div.step4 div.report_second  ul.chartUl > li div.chartArea div.chartZone ul li {width:75px; height:70px; position:relative; overflow:hidden; float:left;}
+
+
+
+div#content div.page2 div.step4 div.report_second div.chartOne { width:30px;  background:url('/static/assets/img/co2/mail/mail_chart_bg_1.jpg'); position:absolute; height:40px; bottom:0px; left:23px; }
+div#content div.page2 div.step4 div.report_second div.chartTwo { width:30px; background:url('/static/assets/img/co2/mail/mail_chart_bg_2.jpg'); position:absolute; height:40px; bottom:0px; left:23px;}
+div#content div.page2 div.step4 div.report_second div.chartThree { width:30px;  background:url('/static/assets/img/co2/mail/mail_chart_bg_3.jpg'); position:absolute; height:40px; bottom:0px; left:23px; }
+div#content div.page2 div.step4 div.report_second div.name {font-size:12px; font-weight:900; position:absolute; letter-spacing:-1px; }
+div#content div.page2 div.step4 div.report_second div.one {width:75px; text-align:center; bottom:45px;}
+div#content div.page2 div.step4 div.report_second div.two {width:75px; text-align:center; bottom:45px;}
+div#content div.page2 div.step4 div.report_second div.three {width:75px; text-align:center; bottom:45px;}
+
+div#content div.page2 div.step4 div.report_second div.subName ul {margin:0 auto; position:relative; overflow:hidden; width:225px; margin-left:5px; }
+div#content div.page2 div.step4 div.report_second div.subName ul li {width:75px; float:left; text-align:center; font-weight:600; margin-top:5px; font-size:12px; font-family:'Noto Sans kr'; }
+
+div#content div.page2 div.step4 div.report_left div.report_second div.report_msg {margin-left:20px; margin-top:5px;}
+div#content div.page2 div.step4 div.report_left div.report_second div.report_msg ul {width:250px; margin-top:0;}
+div#content div.page2 div.step4 div.report_left div.report_second div.report_msg ul li {background:url('/static/assets/img/co2/li_bg_yellow.jpg') left 8px no-repeat; padding-left:10px; font-size:15px; font-weight:bold; letter-spacing:-1px; line-height:23px; font-family:'Noto Sans Kr';  }
+div#content div.page2 div.step4 div.report_left div.report_second div.report_msg ul li span { color:#ff4d4d; }
+
+div#content div.page2 div.step4 div.report_right {width:305px; float:left; height:545px; margin-left:20px; margin-top:45px;}
+div#content div.page2 div.step4 div.report_right div.report_top {width:290px; height:185px;  margin-top:45px; background:url('/static/assets/img/co2/step4_right_bg.jpg') no-repeat; }
+div#content div.page2 div.step4 div.report_right div.report_top table tr td {text-align:right; font-size:17px; font-weight:900;  }
+
+
+
+div#content div.page3 , div#content div.page3 div.section {min-height:900px; }
+div#content div.page3 div.pageDiv {width:1120px; height:670px; background:url('/static/assets/img/co2/page3_bg.png') no-repeat; margin:0 auto; margin-top:160px; }
+div#content div.page3 div.tapMenu {position:relative; overflow:hidden;}
+div#content div.page3 div.tapMenu ul {margin-top:58px; margin-left:615px; }
+div#content div.page3 div.tapMenu ul li {float:left; margin-left:30px; margin-right:30px; font-size:17px; font-weight:900;  cursor:pointer; }
+div#content div.page3 div.tapMenu ul li.on {color:#01a9e3; }
+div#content div.page3 div.tapMenu ul li:first-child {margin-left:25px;}
+div#content div.page3 div.contentDiv {width:1025px; height:425px; margin-left:55px; margin-top:90px; }
+div#content div.page3 div.contentDiv ul {height:450px; overflow-y:overlay;}
+div#content div.page3 div.contentDiv ul li {float:left; width:315px; height:200px; background:url('/static/assets/img/co2/page3_contentBg.png') no-repeat; margin-left:15px; margin-bottom:25px; position:relative; overflow:hidden; }
+div#content div.page3 div.contentDiv ul li:nth-child(3n+1) {margin-left:0px;}
+div#content div.page3 div.contentDiv ul li div.icon {margin-left:60px; margin-top:25px;}
+div#content div.page3 div.contentDiv ul li div.msg {position:absolute; top:40px; left:132px; font-weight:900; letter-spacing:-1px; font-size:17px; color:#333333;}
+div#content div.page3 div.contentDiv ul li div.msg span {color:#e62e37;}
+div#content div.page3 div.contentDiv ul li div.price1 {font-size:14px; color:#666; font-weight:900; position:absolute; top:145px; left:75px;  }
+div#content div.page3 div.contentDiv ul li div.price2 {font-size:14px; color:#666; font-weight:900;  position:absolute; top:145px; left:148px;   }
+div#content div.page3 div.contentDiv ul li div.price3 {font-size:14px; color:#666; font-weight:900; position:absolute; top:145px; left:213px;  }
+
+
+
+.redInput {width:200px; padding-left:15px; height:29px; border:3px solid #ff4d4d; font-family:Muli, "Noto Sans KR", 나눔고딕, Dotum, 돋움, sans-serif; color:#000; text-align:left; font-weight:bold;}
+
+
+path[stroke-width="1"] {stroke: transparent;}
+
+
+div.page1 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #c6c6c6;
+    opacity: 1; /* Firefox */
+    text-align:right;
+}
+
+div.page1  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #c6c6c6;
+    text-align:right;
+}
+
+div.page1  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: #c6c6c6;
+    text-align:right;
+}
+
+div.page2 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #c6c6c6;
+    opacity: 1; /* Firefox */
+    text-align:left;
+}
+
+div.page2  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #c6c6c6;
+    text-align:left;
+}
+
+div.page2  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: #c6c6c6;
+    text-align:left;
+}
+
+
+
+div#footer {}
+div#footer div.left {width:260;}
+div#footer div.left img {margin-top:30px;}
+div#footer div.right {width:920px;  }
+div#footer div.right div.top {font-size:14px; margin-top:20px;}
+div#footer div.right ul li {float:left; margin-right:35px; font-weight:500;}
+div#footer div.right div.top ul li a {color:#666; font-family:Muli, "Noto Sans KR", 나눔고딕, Dotum, 돋움, sans-serif; }
+div#footer div.right div.bottom {margin-top:10px;}
+div#footer div.right div.bottom span {font-size:12px; color:#a7a7a7; font-family:Muli, "Noto Sans KR", 나눔고딕, Dotum, 돋움, sans-serif;}
+div#footer div.right div.absolute {position:absolute; right:0px; top:19px;}
+div#footer div.right div.absolute ul li a {color:#256dd2; font-family:Muli, "Noto Sans KR", 나눔고딕, Dotum, 돋움, sans-serif; font-size:14px;}
+
+
+/*radio button*/
+
+input[type="radio"]:not(old){
+  width:24px;
+  opacity: 0;
+  cursor:pointer;
+}
+
+
+input[type="radio"]:not(old) + label {
+  display:inline-block;
+  background:url('/static/assets/img/co2/radio.png') no-repeat;
+  width:85px;
+  height:24px;
+  margin-left:-60px;
+  padding-left:24px;
+  cursor:pointer;
+  white-space:nowrap;
+}
+
+input[type="radio"]:not(old):checked + label {
+  display:inline-block;
+  background:url('/static/assets/img/co2/radio_on.png') no-repeat;
+  width:85px;
+  height:24px;
+  margin-left:-60px;
+  padding-left:24px;
+  cursor:pointer;
+  white-space:nowrap;
+}
+
+label {cursor:pointer;}
+
+
+input[class="w180"][type="radio"]:not(old) + label {width:180px; margin-left:-40px; margin-right:5px;}
+
+input[id="homesize_a"][type="radio"]:not(old) + label , input[id="homesize_a"][type="radio"]:not(old):checked + label {margin-left:-60px;}
+input[id="homesize_b"][type="radio"]:not(old) + label , input[id="homesize_b"][type="radio"]:not(old):checked + label {margin-left:-60px;}
+input[id="homesize_c"][type="radio"]:not(old) + label , input[id="homesize_c"][type="radio"]:not(old):checked + label {margin-left:0;}
+input[id="homesize_d"][type="radio"]:not(old) + label , input[id="homesize_d"][type="radio"]:not(old):checked + label {margin-left:-50px;}
+input[id="homesize_e"][type="radio"]:not(old) + label , input[id="homesize_e"][type="radio"]:not(old):checked + label {margin-left:-5px;}
+
+img.nextBtn { position:absolute; right:42px; top:395px; cursor:pointer; }
+img.prevBtn { position:absolute; left:40px; top:395px; cursor:pointer; }
