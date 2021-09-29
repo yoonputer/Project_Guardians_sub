@@ -41,5 +41,6 @@ class Co2:
 
 if __name__ == '__main__':
     print(Co2().c1('manufacture'))
+    print(Co2().c3('manufacture'))
 
 

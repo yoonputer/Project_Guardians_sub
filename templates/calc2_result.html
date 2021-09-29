@@ -138,6 +138,137 @@ function call2()
   document.getElementById('co2').value = (Math.round((parseInt(document.getElementById('elec').value)  * 0.4663) / 0.1)) * 0.1;
  }
 }
+
+
+
+var result_val = 0.0;
+var money_val = 0.0;
+
+function getCheckboxValue(event)  {
+  var result = '';
+  var money_result = '';
+
+  if(event.target.checked)  {
+    result = event.target.value;
+    result_val += parseFloat(result);
+    document.getElementById('co2').value = Math.round(result_val * 100) / 100;
+
+        switch(event.target.id){
+            case 'sol1':
+                money_result = document.getElementById('money1').value;
+                money_val += parseFloat(money_result);
+                document.getElementById('money').value = Math.round(money_val * 100) / 100;
+                break;
+            case 'sol2':
+                money_result = document.getElementById('money2').value;
+                money_val += parseFloat(money_result);
+                document.getElementById('money').value = Math.round(money_val * 100) / 100;
+                break;
+            case 'sol3':
+                money_result = document.getElementById('money3').value;
+                money_val += parseFloat(money_result);
+                document.getElementById('money').value = Math.round(money_val * 100) / 100;
+                break;
+            case 'sol4':
+                money_result = document.getElementById('money4').value;
+                money_val += parseFloat(money_result);
+                document.getElementById('money').value = Math.round(money_val * 100) / 100;
+                break;
+            case 'sol5':
+                money_result = document.getElementById('money5').value;
+                money_val += parseFloat(money_result);
+                document.getElementById('money').value = Math.round(money_val * 100) / 100;
+                break;
+            case 'sol6':
+                money_result = document.getElementById('money6').value;
+                money_val += parseFloat(money_result);
+                document.getElementById('money').value = Math.round(money_val * 100) / 100;
+                break;
+            case 'sol7':
+                money_result = document.getElementById('money7').value;
+                money_val += parseFloat(money_result);
+                document.getElementById('money').value = Math.round(money_val * 100) / 100;
+                break;
+            case 'sol8':
+                money_result = document.getElementById('money8').value;
+                money_val += parseFloat(money_result);
+                document.getElementById('money').value = Math.round(money_val * 100) / 100;
+                break;
+            case 'sol9':
+                money_result = document.getElementById('money9').value;
+                money_val += parseFloat(money_result);
+                document.getElementById('money').value = Math.round(money_val * 100) / 100;
+                break;
+            case 'sol10':
+                money_result = document.getElementById('money10').value;
+                money_val += parseFloat(money_result);
+                document.getElementById('money').value = Math.round(money_val * 100) / 100;
+                break;
+            }
+
+  }else {
+    result2 = event.target.value;
+    result_val -= parseFloat(result2);
+    document.getElementById('co2').value = Math.round(result_val * 100) / 100;
+
+            switch(event.target.id){
+            case 'sol1':
+                money_result = document.getElementById('money1').value;
+                money_val -= parseFloat(money_result);
+                document.getElementById('money').value = Math.round(money_val * 100) / 100;
+                break;
+            case 'sol2':
+                money_result = document.getElementById('money2').value;
+                money_val -= parseFloat(money_result);
+                document.getElementById('money').value = Math.round(money_val * 100) / 100;
+                break;
+            case 'sol3':
+                money_result = document.getElementById('money3').value;
+                money_val -= parseFloat(money_result);
+                document.getElementById('money').value = Math.round(money_val * 100) / 100;
+                break;
+            case 'sol4':
+                money_result = document.getElementById('money4').value;
+                money_val -= parseFloat(money_result);
+                document.getElementById('money').value = Math.round(money_val * 100) / 100;
+                break;
+            case 'sol5':
+                money_result = document.getElementById('money5').value;
+                money_val -= parseFloat(money_result);
+                document.getElementById('money').value = Math.round(money_val * 100) / 100;
+                break;
+            case 'sol6':
+                money_result = document.getElementById('money6').value;
+                money_val -= parseFloat(money_result);
+                document.getElementById('money').value = Math.round(money_val * 100) / 100;
+                break;
+            case 'sol7':
+                money_result = document.getElementById('money7').value;
+                money_val -= parseFloat(money_result);
+                document.getElementById('money').value = Math.round(money_val * 100) / 100;
+                break;
+            case 'sol8':
+                money_result = document.getElementById('money8').value;
+                money_val -= parseFloat(money_result);
+                document.getElementById('money').value = Math.round(money_val * 100) / 100;
+                break;
+            case 'sol9':
+                money_result = document.getElementById('money9').value;
+                money_val -= parseFloat(money_result);
+                document.getElementById('money').value = Math.round(money_val * 100) / 100;
+                break;
+            case 'sol10':
+                money_result = document.getElementById('money10').value;
+                money_val -= parseFloat(money_result);
+                document.getElementById('money').value = Math.round(money_val * 100) / 100;
+                break;
+            }
+  }
+
+  //document.getElementById('result').innerText
+  // = result;
+
+}
 </script>
 
 
@@ -158,19 +289,37 @@ function call2()
     <form method="get" action="form-action.html">
       <br>
       <p>{{sort}}에 관한 감축방안</p>
+        <div class = sorting_act>
+      <p><input type="checkbox" id ="sol1" value={{deco1}} onclick="getCheckboxValue(event)"> {{sol1}}</p>
+      <p><input type="checkbox" id ="sol2" value={{deco2}} onclick="getCheckboxValue(event)"> {{sol2}}</p>
+      <p><input type="checkbox" id ="sol3" value={{deco3}} onclick="getCheckboxValue(event)"> {{sol3}}</p>
+      <p><input type="checkbox" id ="sol4" value={{deco4}} onclick="getCheckboxValue(event)"> {{sol4}}</p>
+      <p><input type="checkbox" id ="sol5" value={{deco5}} onclick="getCheckboxValue(event)"> {{sol5}}</p>
+      <p><input type="checkbox" id ="sol6" value={{deco6}} onclick="getCheckboxValue(event)"> {{sol6}}</p>
+      <p><input type="checkbox" id ="sol7" value={{deco7}} onclick="getCheckboxValue(event)"> {{sol7}}</p>
+      <p><input type="checkbox" id ="sol8" value={{deco8}} onclick="getCheckboxValue(event)"> {{sol8}}</p>
+      <p><input type="checkbox" id ="sol9" value={{deco9}} onclick="getCheckboxValue(event)"> {{sol9}}</p>
+      <p><input type="checkbox" id ="sol10" value={{deco10}} onclick="getCheckboxValue(event)"> {{sol10}}</p>
+        </div>
 
-      <p><label><input type="checkbox" name="sol1" value="sol1"> {{sol1}}</label></p>
-      <p><label><input type="checkbox" name="sol2" value="sol2"> {{sol2}}</label></p>
-      <p><label><input type="checkbox" name="sol3" value="sol3"> {{sol3}}</label></p>
-      <p><label><input type="checkbox" name="sol4" value="sol4"> {{sol4}}</label></p>
-      <p><label><input type="checkbox" name="sol5" value="sol5"> {{sol5}}</label></p>
-      <p><label><input type="checkbox" name="sol6" value="sol6"> {{sol6}}</label></p>
-      <p><label><input type="checkbox" name="sol7" value="sol7"> {{sol7}}</label></p>
-      <p><label><input type="checkbox" name="sol8" value="sol8"> {{sol8}}</label></p>
-      <p><label><input type="checkbox" name="sol9" value="sol9"> {{sol9}}</label></p>
-      <p><label><input type="checkbox" name="sol10" value="sol10"> {{sol10}}</label></p>
+        <td><input type='number' name='co2' id='co2' readonly> tCO₂/yr</td>
+        <td><input type='number' name='money' id='money' readonly> 백만원/yr</td>
 
-      <p><input type="submit" value="Submit"> <input type="reset" value="Reset"></p>
+
+<!--        <div id='result'></div>-->
+<!--      <p><input type="submit" value="Submit"> <input type="reset" value="Reset"></p>-->
+        <br><br><br><br><br><br><br><br>
+
+        <input type="hidden" id="money1" value={{money1}}>
+        <input type="hidden" id="money2" value={{money2}}>
+        <input type="hidden" id="money3" value={{money3}}>
+        <input type="hidden" id="money4" value={{money4}}>
+        <input type="hidden" id="money5" value={{money5}}>
+        <input type="hidden" id="money6" value={{money6}}>
+        <input type="hidden" id="money7" value={{money7}}>
+        <input type="hidden" id="money8" value={{money8}}>
+        <input type="hidden" id="money9" value={{money9}}>
+        <input type="hidden" id="money10" value={{money10}}>
 
     </form>
   </body>
