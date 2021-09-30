@@ -39,8 +39,25 @@ class Co2:
         result = df3['deco2'].tolist()
         return result
 
+    # graph -> 그래프용 데이터 추출
+    def graph(self,ind,sido):
+        df = pd.read_excel(DATA_DIRS[0]+'\\calc2_result_graph.xlsx',engine='openpyxl', index_col=0);
+        graph_col = ind + sido
+
+        for i in df:
+            if i == graph_col:
+                df = df[graph_col]
+
+        df2 = df.transpose()
+
+        result = df2[['year_sum','tanso','tree']].tolist()
+        return result
+
+
+
 if __name__ == '__main__':
-    print(Co2().c1('manufacture'))
+    # print(Co2().c1('manufacture'))
     print(Co2().c3('manufacture'))
+    print(Co2().graph('manufacture','강원도'))
 
 

@@ -27,11 +27,20 @@ def calc2(request):
 
 def calc2_result(request):
 	try:
+		user_elec = request.GET.get('elec');
+		user_co2 = request.GET.get('co2');
+		user_tree = request.GET.get('tree');
+		sido = request.GET.get('sido');
+
+
 		ind = request.GET.get('ind');
 		data = Co2().c1(ind);
 		data_sorting = Co2().c2(ind);
 		money = Co2().c3(ind);
 		deco2 = Co2().c4(ind);
+		ind_mean = Co2().graph(ind,sido)
+
+
 		context = {
 			'sol1': data[0],
 			'sol2': data[1],
@@ -64,8 +73,17 @@ def calc2_result(request):
 			'deco8': deco2[7],
 			'deco9': deco2[8],
 			'deco10': deco2[9],
+			'user_elec' : user_elec,
+			'user_co2' : user_co2,
+			'user_tree' : user_tree,
+			'result_sido': sido,
+			'ind_elec' : ind_mean[0],
+			'ind_co2' : ind_mean[1],
+			'ind_tree' : ind_mean[2],
 		};
 	except IndexError:
+		return render(request, 'calc2.html')
+	except AttributeError:
 		return render(request, 'calc2.html')
 	return render(request, 'calc2_result.html', context);
 

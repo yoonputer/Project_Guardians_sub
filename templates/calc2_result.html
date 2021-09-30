@@ -35,6 +35,7 @@
     <link rel="stylesheet" href="{% static 'assets/css/nice-select.css' %}">
     <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
     <link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/highcharts.css' %}">
 </head>
 <body>
     <!--? Preloader Start -->
@@ -124,22 +125,6 @@
         <!-- Hero End -->
         <!--? Blog Area Start111111111111111111111111111111111111111111111-->
 <script language='javascript'>
-function call()
-{
- if(document.getElementById("elec").value && document.getElementById("cell2").value){
-  document.getElementById('co2').value =parseInt(document.getElementById('elec').value) + parseInt(document.getElementById('cell2').value);
- }
-}
-function call2()
-{
- if(document.getElementById("elec").value){
-  document.getElementById('tree').value = Math.round((((parseInt(document.getElementById('elec').value)  * 0.4663)/ 6.6) / 0.1) * 0.1);
- }{
-  document.getElementById('co2').value = (Math.round((parseInt(document.getElementById('elec').value)  * 0.4663) / 0.1)) * 0.1;
- }
-}
-
-
 
 var result_val = 0.0;
 var money_val = 0.0;
@@ -310,6 +295,22 @@ function getCheckboxValue(event)  {
 <!--      <p><input type="submit" value="Submit"> <input type="reset" value="Reset"></p>-->
         <br><br><br><br><br><br><br><br>
 
+        <!-- highcharts 표시  -->
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+        <script src="https://code.highcharts.com/modules/export-data.js"></script>
+        <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+        <figure class="highcharts-figure">
+            <div id="container"></div>
+            <p class="highcharts-description">
+            </p>
+        </figure>
+        <!-- highcharts close  -->
+
+
+
+        <!-- hidden input list  -->
         <input type="hidden" id="money1" value={{money1}}>
         <input type="hidden" id="money2" value={{money2}}>
         <input type="hidden" id="money3" value={{money3}}>
@@ -398,6 +399,94 @@ function getCheckboxValue(event)  {
     <!-- Jquery Plugins, main Jquery -->
     <script src="{% static 'assets/js/plugins.js' %}"></script>
     <script src="{% static 'assets/js/main.js' %}"></script>
+
+    <!-- highcharts script -->
+    <script>
+        var chart = Highcharts.chart('container', {
+
+        chart: {
+            type: 'column'
+        },
+
+        title: {
+            text: '   '
+        },
+
+    /*     subtitle: {
+            text: 'Resize the frame or click buttons to change appearance'
+        }, */
+
+        legend: {
+            align: 'right',
+            verticalAlign: 'middle',
+            layout: 'vertical'
+        },
+
+        xAxis: {
+            categories: ['탄소발생량', '필요 소나무'],
+            labels: {
+                x: -10
+            }
+        },
+
+        yAxis: {
+            allowDecimals: false,
+            title: {
+                text: 'Amount'
+            }
+        },
+
+        series: [{
+            name: '사용자 입력값',
+            data: [Math.round({{user_co2}}*100)/100, Math.round({{user_tree}}*100)/100]
+        }, {
+            name: '{{result_sido}} {{sort}}의 평균값',
+            data: [Math.round({{ind_co2}}*100)/100, Math.round({{ind_tree}}*100)/100]
+        }],
+        plotOptions: {
+        column: {
+            dataLabels: {
+                enabled: true,
+                crop: false,
+                overflow: 'none'
+            }
+        }
+    },
+
+        responsive: {
+            rules: [{
+                condition: {
+                    maxWidth: 500
+                },
+                chartOptions: {
+                    legend: {
+                        align: 'center',
+                        verticalAlign: 'bottom',
+                        layout: 'horizontal'
+                    },
+                    yAxis: {
+                        labels: {
+                            align: 'left',
+                            x: 0,
+                            y: -5
+                        },
+                        title: {
+                            text: null
+                        }
+                    },
+                    subtitle: {
+                        text: null
+                    },
+                    credits: {
+                        enabled: false
+                    }
+                }
+            }]
+        }
+    });
+
+
+    </script>
 
 </body>
 </html>
