@@ -276,18 +276,17 @@ function getCheckboxValue(event)  {
     <form method="get" action="form-action.html">
       <br>
       <p>{{sort}}에 관한 감축방안</p>
-        <div class = sorting_act>
-      <p><input type="checkbox" id ="sol1" value={{deco1}} onclick="getCheckboxValue(event)"> {{sol1}}</p>
-      <p><input type="checkbox" id ="sol2" value={{deco2}} onclick="getCheckboxValue(event)"> {{sol2}}</p>
-      <p><input type="checkbox" id ="sol3" value={{deco3}} onclick="getCheckboxValue(event)"> {{sol3}}</p>
-      <p><input type="checkbox" id ="sol4" value={{deco4}} onclick="getCheckboxValue(event)"> {{sol4}}</p>
-      <p><input type="checkbox" id ="sol5" value={{deco5}} onclick="getCheckboxValue(event)"> {{sol5}}</p>
-      <p><input type="checkbox" id ="sol6" value={{deco6}} onclick="getCheckboxValue(event)"> {{sol6}}</p>
-      <p><input type="checkbox" id ="sol7" value={{deco7}} onclick="getCheckboxValue(event)"> {{sol7}}</p>
-      <p><input type="checkbox" id ="sol8" value={{deco8}} onclick="getCheckboxValue(event)"> {{sol8}}</p>
-      <p><input type="checkbox" id ="sol9" value={{deco9}} onclick="getCheckboxValue(event)"> {{sol9}}</p>
-      <p><input type="checkbox" id ="sol10" value={{deco10}} onclick="getCheckboxValue(event)"> {{sol10}}</p>
-        </div>
+      <label class="switch-button"><input type="checkbox" id ="sol1" value={{deco1}} onclick="getCheckboxValue(event)"><span class="onoff-switch"></span></label> &nbsp;{{sol1}}<br>
+      <label class="switch-button"><input type="checkbox" id ="sol2" value={{deco2}} onclick="getCheckboxValue(event)"><span class="onoff-switch"></span></label> &nbsp;{{sol2}}<br>
+      <label class="switch-button"><input type="checkbox" id ="sol3" value={{deco3}} onclick="getCheckboxValue(event)"><span class="onoff-switch"></span></label> &nbsp;{{sol3}}<br>
+      <label class="switch-button"><input type="checkbox" id ="sol4" value={{deco4}} onclick="getCheckboxValue(event)"><span class="onoff-switch"></span></label> &nbsp;{{sol4}}<br>
+      <label class="switch-button"><input type="checkbox" id ="sol5" value={{deco5}} onclick="getCheckboxValue(event)"><span class="onoff-switch"></span></label> &nbsp;{{sol5}}<br>
+      <label class="switch-button"><input type="checkbox" id ="sol6" value={{deco6}} onclick="getCheckboxValue(event)"><span class="onoff-switch"></span></label> &nbsp;{{sol6}}<br>
+      <label class="switch-button"><input type="checkbox" id ="sol7" value={{deco7}} onclick="getCheckboxValue(event)"><span class="onoff-switch"></span></label> &nbsp;{{sol7}}<br>
+      <label class="switch-button"><input type="checkbox" id ="sol8" value={{deco8}} onclick="getCheckboxValue(event)"><span class="onoff-switch"></span></label> &nbsp;{{sol8}}<br>
+      <label class="switch-button"><input type="checkbox" id ="sol9" value={{deco9}} onclick="getCheckboxValue(event)"><span class="onoff-switch"></span></label> &nbsp;{{sol9}}<br>
+      <label class="switch-button"><input type="checkbox" id ="sol10" value={{deco10}} onclick="getCheckboxValue(event)"><span class="onoff-switch"></span></label> &nbsp;{{sol10}}<br>
+
 
         <td><input type='number' name='co2' id='co2' readonly> tCO₂/yr</td>
         <td><input type='number' name='money' id='money' readonly> 백만원/yr</td>
@@ -305,7 +304,6 @@ function getCheckboxValue(event)  {
 
 <!--        <div id='result'></div>-->
 <!--      <p><input type="submit" value="Submit"> <input type="reset" value="Reset"></p>-->
-        <br><br><br><br><br><br><br><br>
 
         <!-- highcharts 표시  -->
         <script src="https://code.highcharts.com/highcharts.js"></script>
@@ -455,11 +453,11 @@ function getCheckboxValue(event)  {
         },
 
         series: [{
-            name: '사용자 입력값',
-            data: [Math.round({{user_co2}}*100)/100, Math.round({{user_tree}}*100)/100]
-        }, {
             name: '{{result_sido}} {{sort}}의 평균값',
-            data: [Math.round({{ind_co2}}*100)/100, Math.round({{ind_tree}}*100)/100]
+            data: [Math.round({{ind_co2}}*100)/100, Math.round({{ind_tree}}*100)/100], color: "#dedede"
+        }, {
+            name: '사용자 입력값',
+            data: [Math.round({{user_co2}}*100)/100, Math.round({{user_tree}}*100)/100], color: "#d06bf2"
         }],
         plotOptions: {
         column: {
