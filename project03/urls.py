@@ -31,6 +31,7 @@ path('calculator', views.calculator, name='calculator'),
 path('calc', views.calc, name='calc'),
 path('calc2', views.calc2, name='calc2'),
 path('calc2_result', views.calc2_result, name='calc2_result'),
+path('test1234', views.test1234, name='test1234'),
 
 
 ]

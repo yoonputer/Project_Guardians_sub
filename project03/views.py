@@ -87,6 +87,28 @@ def calc2_result(request):
 		return render(request, 'calc2.html')
 	return render(request, 'calc2_result.html', context);
 
+def test1234(request):
+
+	co2 = request.GET.get('co2')
+	money = request.GET.get('money')
+	user_elec = request.GET.get('user_elec');
+	user_co2 = request.GET.get('user_co2');
+	user_tree = request.GET.get('user_tree');
+	result_sido = request.GET.get('user_sido');
+	ind = request.GET.get('ind_name');
+
+	context = {
+		'co2' : co2,
+		'money' : money,
+		'user_elec' : user_elec,
+		'user_co2' : user_co2,
+		'user_tree' : user_tree,
+		'result_sido' : result_sido,
+		'ind' : ind,
+	}
+
+	return render(request, 'test1234.html',context);
+
 # def way(request):
 # 	ind = request.GET['ind'];
 # 	sido = request.GET['sido'];
